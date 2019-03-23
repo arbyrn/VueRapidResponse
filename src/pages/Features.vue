@@ -4,7 +4,7 @@
         <div class="homeContent">            
             <div class="Header"><span class="grey">Transforming</span> Insights <span class="grey">into</span> Actions
                 <div class="Content">
-                    Collect, analyze and act on Medical Affairs Medical Insights faster and better than your competitors, without breaking your budget.
+                    Features Page
                 </div>            
             </div>
         </div>
@@ -16,14 +16,7 @@
         <EctFeature card="SupportingDocs"></EctFeature>
         <EctFeature card="MultiDevice"></EctFeature>
         <EctFeature card="Templates"></EctFeature>
-        <EctFeature card="RealTimeReports"></EctFeature>
-        <EctFeature card="Translation"></EctFeature>
-        <EctFeature card="InsightComments"></EctFeature>
-        <EctFeature card="AI"></EctFeature>
-        <EctFeature card="DocLibrary"></EctFeature>
-        <EctFeature card="Exporting"></EctFeature>
-        <EctFeature card="Team"></EctFeature>
-        
+    
         
     </div>
 </template>

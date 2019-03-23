@@ -11,23 +11,6 @@
         <EctFeature card="RealTime"></EctFeature>
         <EctFeature card="MedStrategy"></EctFeature>
         <EctFeature card="CycleTime"></EctFeature>
-        <EctFeature card="Customizable"></EctFeature>
-        <EctFeature card="MeanInsights"></EctFeature>
-        <EctFeature card="FastMods"></EctFeature>
-        <EctFeature card="CollectAnywhere"></EctFeature>
-        <EctFeature card="SSO"></EctFeature>
-        <EctFeature card="SupportingDocs"></EctFeature>
-        <EctFeature card="MultiDevice"></EctFeature>
-        <EctFeature card="Templates"></EctFeature>
-        <EctFeature card="RealTimeReports"></EctFeature>
-        <EctFeature card="Translation"></EctFeature>
-        <EctFeature card="InsightComments"></EctFeature>
-        <EctFeature card="AI"></EctFeature>
-        <EctFeature card="DocLibrary"></EctFeature>
-        <EctFeature card="Exporting"></EctFeature>
-        <EctFeature card="Team"></EctFeature>
-        
-        
     </div>
 </template>
 <script>

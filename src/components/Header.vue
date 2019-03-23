@@ -1,6 +1,32 @@
 <template>
     <div>
-        Header Component
+        <b-navbar toggleable="sm" variant="white">
+            <b-navbar-brand href="#">
+                <router-link :to="{ name: 'Home' }">
+                    <img class="ectLogo" alt="ECT logo" src="../img/ect_logo_redblk.gif">
+                </router-link>
+            </b-navbar-brand>
+            <b-navbar-toggle target="nav_collapse"/>
+            <b-collapse is-nav id="nav_collapse">
+                <b-navbar-nav>
+                    <b-nav-item-dropdown text="Features" right>
+                        <b-dropdown-item href="#">    
+                            <router-link to="/features">How it Works</router-link>
+                        </b-dropdown-item>
+                        <b-dropdown-item href="#">Collection</b-dropdown-item>
+                        <b-dropdown-item href="#">Analysis</b-dropdown-item>
+                    </b-nav-item-dropdown>
+                    <b-nav-item-dropdown text="Plans" right>
+                        <b-dropdown-item href="#">Plans</b-dropdown-item>
+                        <b-dropdown-item href="#">Pilot</b-dropdown-item>
+                        <b-dropdown-item href="#">FAQ</b-dropdown-item>
+                    </b-nav-item-dropdown>
+                    <b-nav-item href="#">Our Team</b-nav-item>
+                    <b-nav-item href="#">Support</b-nav-item>
+                    <b-nav-item href="#">Login</b-nav-item>
+                </b-navbar-nav>
+            </b-collapse>
+        </b-navbar>
     </div>
 </template>
 <script>
