@@ -11,7 +11,7 @@
         <EctFeature card="Customizable"></EctFeature>
         <EctFeature card="MeanInsights"></EctFeature>
         <EctFeature card="FastMods"></EctFeature>
-        <EctFeature card="CollectAnywhere"></EctFeature>
+        <EctFeature id="collection"  card="CollectAnywhere"></EctFeature>
         <EctFeature card="SSO"></EctFeature>
         <EctFeature card="SupportingDocs"></EctFeature>
         <EctFeature card="MultiDevice"></EctFeature>

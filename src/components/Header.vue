@@ -13,7 +13,7 @@
                         <b-dropdown-item href="#">    
                             <router-link to="/features">How it Works</router-link>
                         </b-dropdown-item>
-                        <b-dropdown-item href="#">Collection</b-dropdown-item>
+                        <b-dropdown-item href="#"><router-link to="/features#collection">Collection</router-link></b-dropdown-item>
                         <b-dropdown-item href="#">Analysis</b-dropdown-item>
                     </b-nav-item-dropdown>
                     <b-nav-item-dropdown text="Plans" right>
