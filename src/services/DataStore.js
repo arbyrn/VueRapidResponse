@@ -237,14 +237,106 @@ var dataStore = {
             linkText: "",
             linkAddress: "#"
         }
-        
-
-        
-
+    ],
+    dividerDetails: [
+        {
+            dividerId: 1,
+            title: 'Need Better Management of Your Insights?',
+            dividerColor: 'Red',
+            buttons: [
+                {
+                    btnText: 'See Plans',
+                    btnColor: 'btnRed',
+                    btnLink: '#',
+                },
+                {
+                    btnText: 'Schedule Free Consult',
+                    btnColor: 'btnBlack',
+                    btnLink: '#',
+                },
+            ]
+        },
+        {
+            dividerId: 2,
+            title: 'Want the Latest News on Medical Insights',
+            dividerColor: 'Red',
+            buttons: [
+                {
+                    btnText: 'Follow us on LinkedIn',
+                    btnColor: 'btnWhite',
+                    btnLink: '#',
+                }
+            ]
+        },
+        {
+            dividerId: 3,
+            title: 'Do You Have the Answers to these top 2 Medical Insights Questions?',
+            dividerColor: 'Red',
+            buttons: [
+                {
+                    btnText: 'Download Your Free Ebook',
+                    btnColor: 'btnBlack',
+                    btnLink: '#',
+                }
+            ]
+        },
+        {
+            dividerId: 4,
+            title: 'The Fear of Sharing Medical Insights and Why You Should Get Over It',
+            dividerColor: 'Red',
+            buttons: [
+                {
+                    btnText: 'Download Your Free Ebook',
+                    btnColor: 'btnBlack',
+                    btnLink: '#',
+                }
+            ]
+        },
+        {
+            dividerId: 5,
+            title: 'Guide to Selecting a Medical Insights Software Vendor',
+            dividerColor: 'Red',
+            buttons: [
+                {
+                    btnText: 'Download Your Free Guide',
+                    btnColor: 'btnBlack',
+                    btnLink: '#',
+                }
+            ]
+        },
+        {
+            dividerId: 6,
+            title: 'Do You Have the Answers to these top 2 Medical Insights Questions?',
+            dividerColor: 'Gray',
+            buttons: [
+                {
+                    btnText: 'See a Demo',
+                    btnColor: 'btnBlack',
+                    btnLink: '#',
+                }
+            ]
+        },
+        {
+            dividerId: 7,
+            title: 'Insight <strong>Analysis</strong> - Features & Benefits',
+            dividerColor: 'Gray',
+            buttons: [
+                {
+                    btnText: 'See a Demo',
+                    btnColor: 'btnBlack',
+                    btnLink: '#',
+                }
+            ]
+        },
     ],
     getCard(cardId) {
         return this.cardDetails.filter(function (card) {
             return card.cardId == cardId;
+        })[0];
+    },
+    getDivider(dividerId) {
+        return this.dividerDetails.filter(function (divider){
+            return divider.dividerId == dividerId;
         })[0];
     }
 }

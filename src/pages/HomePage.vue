@@ -10,13 +10,17 @@
         </div>
         <EctFeature card="RealTime"></EctFeature>
         <EctFeature card="MedStrategy"></EctFeature>
+        <RnRDivider dividerId="1"></RnRDivider>
         <EctFeature card="CycleTime"></EctFeature>
+        <RnRFooter></RnRFooter>
     </div>
 </template>
 <script>
 
     import Header from '../components/Header.vue'
     import EctFeature from '../components/EctFeature.vue'
+    import RnRDivider from '../components/RnRDivider.vue'
+    import RnRFooter from '../components/RnRFooter.vue'
  
 export default {
       name: 'HomePage',
@@ -25,7 +29,9 @@ export default {
       },
     components: {
         Header,
-        EctFeature
+        EctFeature,
+        RnRDivider,
+        RnRFooter
     }
 }
 </script>

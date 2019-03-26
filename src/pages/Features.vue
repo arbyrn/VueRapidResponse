@@ -12,11 +12,13 @@
         <EctFeature card="MeanInsights"></EctFeature>
         <EctFeature card="FastMods"></EctFeature>
         <EctFeature id="collection"  card="CollectAnywhere"></EctFeature>
+        <RnRDivider dividerId="2"></RnRDivider>
         <EctFeature card="SSO"></EctFeature>
         <EctFeature card="SupportingDocs"></EctFeature>
+        <RnRDivider dividerId="3"></RnRDivider>
         <EctFeature card="MultiDevice"></EctFeature>
         <EctFeature card="Templates"></EctFeature>
-    
+        <RnRFooter></RnRFooter>
         
     </div>
 </template>
@@ -24,6 +26,8 @@
 
     import Header from '../components/Header.vue'
     import EctFeature from '../components/EctFeature.vue'
+    import RnRDivider from '../components/RnRDivider.vue'
+    import RnRFooter from '../components/RnRFooter.vue'
  
 export default {
       name: 'Features',
@@ -32,7 +36,9 @@ export default {
       },
     components: {
         Header,
-        EctFeature
+        EctFeature,
+        RnRDivider,
+        RnRFooter
     }
 }
 </script>

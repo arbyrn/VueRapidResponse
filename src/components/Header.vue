@@ -17,11 +17,14 @@
                         <b-dropdown-item href="#">Analysis</b-dropdown-item>
                     </b-nav-item-dropdown>
                     <b-nav-item-dropdown text="Plans" right>
-                        <b-dropdown-item href="#">Plans</b-dropdown-item>
+                        <b-dropdown-item href="#">
+                            <router-link to="/plans">Plans</router-link>
+                        </b-dropdown-item>
                         <b-dropdown-item href="#">Pilot</b-dropdown-item>
                         <b-dropdown-item href="#">FAQ</b-dropdown-item>
                     </b-nav-item-dropdown>
-                    <b-nav-item href="#">Our Team</b-nav-item>
+                    <b-nav-item href="#"><router-link to="/ourteam">Our Team</router-link></b-nav-item>
+                        
                     <b-nav-item href="#">Support</b-nav-item>
                     <b-nav-item href="#">Login</b-nav-item>
                 </b-navbar-nav>
