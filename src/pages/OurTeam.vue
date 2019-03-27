@@ -9,13 +9,13 @@
                 <div class="Content">
                     You don't have a cookie-cutter business and you don't need a cookie-cutter medical insights solution.
                 </div>            
-                <button class="btnSeeDemo rounded-3">See a Demo</button>
+                <button class="btnSeeDemo rounded-3">Connect With Us</button>
                 
             </div>
             <hr>
-            <EctFeature card="RealTime"></EctFeature> 
+            <EctFeature card="Team"></EctFeature> 
             <div class="container">
-                <p class="copyText">
+                <p class="Header">
                     Why do <span class="Red">Fortune 500</span> and <span class="Red">Small Businesses</span> choose to partner with ECT Technologies?
                 </p>
                 <p class="copyText">
@@ -23,33 +23,33 @@
                     when designing a custom medical insights tool for your business.
                 </p>
                 <ul class="copyText">
-                    <li>Over 30 years of pharmaceutical industry experience</li>
-                    <li>Over 25 years in enterprise software development experience</li>
-                    <li>Servicing Fortune 500 and Small Businesses in the Pharmaceutical and Biotechnical industries.</li>
+                    <li>Over 30 years of <b>pharmaceutical industry</b> experience</li>
+                    <li>Over 25 years in <b>enterprise software development</b> experience</li>
+                    <li>Servicing <b>Fortune 500</b> and <b>Small Businesses</b> in the Pharmaceutical and Biotechnical industries.</li>
                     <li>Over 30 years of pharmaceutical industry experience</li>           
                 </ul>
-
+                <EctFeature card="MeanInsights"></EctFeature>
                 <div>
                     
-                    <h2>Where have clients seen the greatest improvements?</h2>
+                    <p class="Header">Where have clients seen the greatest improvements?</p>
                     <ul class="copyText">
-                        <li>Quality of collected medical insights significantly improved.</li>
-                        <li>Speed with which medical insights are analyzed and actioned has increased dramatically.</li>
-                        <li>Effectiveness of the field teams in medical affairs and commercial departments has greatly improved.</li>
+                        <li><span class="Red">Quality</span> of collected medical insights significantly improved.</li>
+                        <li><span class="Red">Speed</span> with which medical insights are analyzed and actioned has increased dramatically.</li>
+                        <li><span class="Red">Effectiveness</span> of the field teams in medical affairs and commercial departments has greatly improved.</li>
                     </ul>
 
                 </div>
                 <div class="copyText">
-                    Our Leadership is Committed to Partnering with You
+                    <p class="Header">Our Leadership is Committed to Partnering with You</p>
                     We will not be a faceless technology vendor to your organization. We are so dedicated to this partnership that we encourage
-                    you to reach out directly to our Managing Partner, Richard Olsson, with your questions and concerns. Richard and the entire 
+                    you to <a href=#>reach out directly to our Managing Partner</a>, Richard Olsson, with your questions and concerns. Richard and the entire 
                     team at ECT Technologies are 100% committed to improving the efficiency and effectiveness of your medical affairs department 
                     through our customized solutions.
                     <p class="copyText">
-                    Want more information about our team and how we can help your Medical Insights process? Connect with Richard on LinkedIn Today.
+                    Want more information about our team and how we can help your Medical Insights process? <a href=#>Connect with Richard on LinkedIn</a> Today.
                     </p>
                     <div class="col-md-12">
-                            <button class="btnSeeDemo rounded-3">See a Demo</button>
+                            <button class="btnSeeDemo rounded-3">Connect with Us</button>
                         </div>
                 </div>
             </div>        
@@ -70,6 +70,7 @@ export default {
     components: {
         Header,
         EctFeature,
+        RnRFooter
         
     }
 }
@@ -107,9 +108,9 @@ export default {
         border-radius: 6px;
         color:white;
         border-color: red;
-        font-size: 24px;
+        font-size: 18px;
         width: 160px;
-        height: 60px;
+        height: 45px;
     }
 
     .copyText {    
@@ -120,7 +121,9 @@ export default {
         color: #6d6e70;
         font: 24px tahoma;   
     }
-
+    .copyText a {
+        color: red;
+    }
     .Grey {
         color: gray;
     }

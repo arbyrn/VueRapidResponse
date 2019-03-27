@@ -40,11 +40,18 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .ectLogo{
-        width:50px;
-        height:50px;
+        width:120px;
+        height:120px;
     }
     .ectMenu{
         font-size:24px;
         font-weight:600;
+    }
+    #nav_collapse {
+        font-size:24px;
+        font-weight:600;
+    }
+    a {
+        color:#6D6E70;
     }
 </style>
