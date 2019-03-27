@@ -7,16 +7,28 @@
                     Collect, analyze and act on Medical Affairs Medical Insights faster and better than your competitors, without breaking your budget.
                 </div>            
             </div>
+            <div class="row">
+                <div class="col-4 offset-4"><button class="btnSeeDemo rounded-3">Free Consult</button></div>               
+            </div>
+            <div class="row">    
+                 <div class="col-4 offset-4"><span class="ourNumber">(888) 843-5691</span></div>                
+            </div>
         </div>
+        <hr>
         <EctFeature card="RealTime"></EctFeature>
         <EctFeature card="MedStrategy"></EctFeature>
         <EctFeature card="CycleTime"></EctFeature>
+        <RnRDivider dividerId="1"></RnRDivider>
+        
+        <RnRFooter></RnRFooter>
     </div>
 </template>
 <script>
 
     import Header from '../components/Header.vue'
     import EctFeature from '../components/EctFeature.vue'
+    import RnRDivider from '../components/RnRDivider.vue'
+    import RnRFooter from '../components/RnRFooter.vue'
  
 export default {
       name: 'HomePage',
@@ -25,7 +37,9 @@ export default {
       },
     components: {
         Header,
-        EctFeature
+        EctFeature,
+        RnRDivider,
+        RnRFooter
     }
 }
 </script>
@@ -45,4 +59,23 @@ export default {
         color:gray;
         text-align: justify;
     }
+
+    .btnSeeDemo {
+        margin: 15px;
+        background-color: red;
+        border-radius: 6px;
+        color:white;
+        border-color: red;
+        font-size: 20px;
+        width: 140px;
+        height: 45px;
+    }
+
+    .ourNumber {
+        font-size: 22px;
+        font-weight: 700;
+        color: black;
+    }
+
+    
 </style>
