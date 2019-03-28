@@ -1,5 +1,5 @@
 <template>
-    <div class="contentDivider full_width" :class="dividerColor">
+    <div :id="id" class="contentDivider full_width" :class="dividerColor">
         <div class="textContent">
             <p v-html="title"></p>
         </div>                           
@@ -12,7 +12,7 @@
     import dataStore from '../services/DataStore.js'
     export default {
         name: 'RnRDivider',
-        props: ['dividerId'], 
+        props: ['dividerId', 'id'], 
         data: function() {
             return {
                 title: 'This is default',

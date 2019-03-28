@@ -73,18 +73,18 @@
             </div>
         <EctFeature card="RealTime"></EctFeature>
         <EctFeature card="MedStrategy"></EctFeature>
-        <RnRDivider dividerId="8"></RnRDivider>
+        <RnRDivider id="collection" dividerId="8"></RnRDivider>
         <EctFeature card="Customizable"></EctFeature>
         <EctFeature card="MeanInsights"></EctFeature>
         <EctFeature card="FastMods"></EctFeature>
         <RnRDivider dividerId="2"></RnRDivider>
-        <EctFeature id="collection"  card="CollectAnywhere"></EctFeature>
+        <EctFeature card="CollectAnywhere"></EctFeature>
         <EctFeature card="SSO"></EctFeature>
         <EctFeature card="SupportingDocs"></EctFeature>
         <RnRDivider dividerId="3"></RnRDivider>       
         <EctFeature card="MultiDevice"></EctFeature>        
         <EctFeature card="Templates"></EctFeature>
-        <RnRDivider dividerId="7"></RnRDivider>
+        <RnRDivider id="analysis" dividerId="7"></RnRDivider>
         <EctFeature card="RealTimeReports"></EctFeature>
         <EctFeature card="Translation"></EctFeature>
         <EctFeature card="InsightComments"></EctFeature>

@@ -4,7 +4,7 @@
   "description": "Rapid response web built with webpack",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config build/webpack.config.dev.js",
+    "dev": "webpack-dev-server --inline --history-api-fallback --progress --config build/webpack.config.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "J Olsson ECT LLC",

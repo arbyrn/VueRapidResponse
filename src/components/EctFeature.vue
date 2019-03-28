@@ -1,5 +1,5 @@
 <template>
-    <div class="feature row" :class="featureAlignClass">
+    <div :id="id" class="feature row" :class="featureAlignClass">
         <div class="featureText col-md-6" :class="textOrderClass">
             <div class="featureHeader">{{featureHeader}}</div>
             <div v-html="featureText"></div>
@@ -26,7 +26,7 @@
     import dataStore from '../services/DataStore.js'
     export default {
         name: 'EctFeature',
-        props: ['card'],
+        props: ['card','id'],
         data: function () {
             return {
                 featureText: '',

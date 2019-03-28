@@ -31,7 +31,7 @@
                 </div>
             </div>
             
-            <div id="PilotProgramSection" class="row">
+            <div id="PilotProgram" class="row">
                 <div class="col-md-9 text-left">
                     <h2><img class="targetImage" alt="target" src="../img/target.png"/>Pilot Program</h2>
                     <p class="copyText">Want to give Rapid Response Insights a test drive before commiting to an annual contract? Test the program for 3 months
