@@ -1,7 +1,7 @@
 <template>
-    <div class="contentDivider" :class="dividerColor">
+    <div class="contentDivider full_width" :class="dividerColor">
         <div class="textContent">
-            <h2 v-html="title"></h2>
+            <p v-html="title"></p>
         </div>                           
         <div class="buttonContent">            
             <button v-for="button in buttons" :key="button.btnText"  class="divider-Btn" :class="button.btnColor" @click="sayHi(button.btnLink)" >{{button.btnText}}</button>
@@ -40,10 +40,10 @@
     div.contentDivider {
         background-color: #FF0A0A;
         text-align: center;
-        font-size: 38px;
+        font-size: 30px;
         color: white;
         padding-top: 50px;
-        height:225px;
+        height:200px;
         margin: 3em 0em;
     }
 
@@ -62,14 +62,19 @@
         color: rgb(233, 129, 129);        
     }
 
+    div.contentDivider.Gray strong.black {
+        background-color:#606060;
+        color: rgb(0, 0, 0);        
+    }
+
     .divider-Btn{
         border-radius: 7px;
         width: 270px;
-        height: 60px;
-        font-size: 20px;
+        height: 50px;
+        font-size: 18px;
         /* margin-bottom: 15px; */
         color: white;
-        margin: 15px 10px;
+        margin: 10px 10px;
     }
 
     button.divider-Btn.btnBlack {
@@ -84,6 +89,17 @@
         color: white;
         border: 3px solid white;
         
+    }
+
+    .full_width{
+        width: 100vw;
+        position: relative;
+        left: calc(-1 * (100vw - 100%)/2);
+
+    /*  left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw; */
     }
 
     button.divider-Btn.btnWhite {

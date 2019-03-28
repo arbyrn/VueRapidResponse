@@ -4,7 +4,7 @@ var dataStore = {
         {
             cardId: 'MedStrategy',
             featureHeader: 'Medical Strategy Shaping',
-            featureText: 'Imagine your medical affairs team is at a key 3- day medical congress.They are feeding back <strong>real- time insights</strong> based on what they are learning from pharmaceutical researchers, thought leaders, and competitors.The entire team has a real-time pulse on everything happening at a medical congress event.',
+            featureText: 'Rapid Response Insights provides your team leader(s) with analytics to reformulate strategies and tactics and give immediate feedback and direction at Medical Congress events. The result; a competitive advantage from collecting more relevant insights that shape future strategic initiatives.',
             callout: 'Discussion',
             calloutColor: 'red',
             mainImg: 'discussion.jpg',
@@ -328,6 +328,18 @@ var dataStore = {
                 }
             ]
         },
+        {
+            dividerId: 8,
+            title: 'Insight <strong class="black">Collection</strong> - Features & Benefits',
+            dividerColor: 'Gray',
+            buttons: [
+                {
+                    btnText: 'See a Demo',
+                    btnColor: 'btnBlack',
+                    btnLink: '#',
+                }
+            ]
+        }
     ],
     getCard(cardId) {
         return this.cardDetails.filter(function (card) {

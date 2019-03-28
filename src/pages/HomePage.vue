@@ -17,9 +17,10 @@
         <hr>
         <EctFeature card="RealTime"></EctFeature>
         <EctFeature card="MedStrategy"></EctFeature>
-        <EctFeature card="CycleTime"></EctFeature>
+        <EctFeature card="CycleTime"></EctFeature>        
         <RnRDivider dividerId="1"></RnRDivider>
-        
+        <EctFeature card="RealTime"></EctFeature>
+        <EctFeature card="Customizable"></EctFeature>
         <RnRFooter></RnRFooter>
     </div>
 </template>
