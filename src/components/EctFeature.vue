@@ -7,7 +7,9 @@
                 <a :href="linkAddress">{{linkText}}</a>
             </div>
         </div>
-        <div class="featureImg col-md-6" :class="imgOrderClass" :data-callout="callout">
+        
+        <div class="featureImg col-md-6" :class="imgOrderClass" :data-callout="callout" >
+            <img :src="getImgUrl(overlayImg)" class="overlayImg" :class="overlayStateClass" />
             <div class="imgWrap">
                 <img :src="getImgUrl(mainImg)" :style="borderStyle" class="mainImg" />
                 <div class="mirrorWrapper">
@@ -38,7 +40,8 @@
                 imgAlign: 'left',
                 linkText: "See All Features",
                 linkAddress: "#",
-                calloutColor: 'red'
+                calloutColor: 'red',
+                overlayImg: ''
             };
         },
         computed: {
@@ -67,6 +70,11 @@
             },
             featureAlignClass: function () {
                 return this.imgAlign;
+            },
+            overlayStateClass: function(){
+                if (this.overlayImg != ''){
+                    return 'overActive';
+                }
             }
 
         },
@@ -86,12 +94,14 @@
                 this.linkText = featureData.linkText;
                 this.linkAddress = featureData.linkAddress;
                 this.calloutColor = featureData.calloutColor;
+                this.overlayImg = featureData.overlayImg;
             },
             getImgUrl(pic) {
-                return require('../img/' + pic);
+                if (pic != ''){
+                    return require('../img/' + pic);
+                }               
             }
         }
-
     }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -156,6 +166,16 @@
         content: attr(data-callout);
         padding: 2px 5px;
         text-align: center;
+    }
+
+    .overlayImg {        
+        position: absolute;
+        display: none;
+    }
+    .overlayImg.overActive{
+        display: inline;
+        top:-46px;
+        left:80px;
     }
 
     .featureImg.red::after {

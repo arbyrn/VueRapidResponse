@@ -12,9 +12,8 @@ var dataStore = {
             border: 'none',
             imgAlign: 'left',
             linkText: "See All Features >",
-            linkAddress: "#"
-
-
+            linkAddress: "#",
+            overlayImg: ''
         },
         {
             cardId: 'CycleTime',
@@ -27,7 +26,8 @@ var dataStore = {
             border: 'none',
             imgAlign: 'right',
             linkText: "See All Features >",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: 'CycleOverlay.png'
         },
         {
             cardId: 'RealTime',
@@ -40,7 +40,8 @@ var dataStore = {
             border: 'none',
             imgAlign: 'right',
             linkText: "See All Features >",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: ''
         },
         {
             cardId: 'Customizable',
@@ -53,7 +54,8 @@ var dataStore = {
             border: 'black',
             imgAlign: 'right',
             linkText: "Schedule a Demo>",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: ''
         },
         {
             cardId: 'MeanInsights',
@@ -66,7 +68,8 @@ var dataStore = {
             border: 'black',
             imgAlign: 'left',
             linkText: "Schedule a Demo>",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: ''
         },
         {
             cardId: 'FastMods',
@@ -79,7 +82,8 @@ var dataStore = {
             border: 'black',
             imgAlign: 'right',
             linkText: "Schedule a Demo>",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: ''
         },
         {
             cardId: 'CollectAnywhere',
@@ -92,7 +96,8 @@ var dataStore = {
             border: 'black',
             imgAlign: 'left',
             linkText: "Schedule a Demo>",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: ''
         },
         {
             cardId: 'SSO',
@@ -105,7 +110,8 @@ var dataStore = {
             border: 'black',
             imgAlign: 'right',
             linkText: "Schedule a Demo>",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: ''
         },
         {
             cardId: 'SupportingDocs',
@@ -118,7 +124,8 @@ var dataStore = {
             border: 'black',
             imgAlign: 'left',
             linkText: "Schedule a Demo>",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: ''
         },
         {
             cardId: 'MultiDevice',
@@ -131,7 +138,8 @@ var dataStore = {
             border: 'black',
             imgAlign: 'right',
             linkText: "Schedule a Demo>",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: ''
         },
         {
             cardId: 'Templates',
@@ -144,7 +152,8 @@ var dataStore = {
             border: 'black',
             imgAlign: 'left',
             linkText: "Schedule a Demo>",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: ''
         },
         {
             cardId: 'RealTimeReports',
@@ -157,7 +166,8 @@ var dataStore = {
             border: 'black',
             imgAlign: 'left',
             linkText: "Schedule a Demo>",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: ''
         },
         {
             cardId: 'Translation',
@@ -170,7 +180,8 @@ var dataStore = {
             border: 'black',
             imgAlign: 'right',
             linkText: "Schedule a Demo>",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: ''
         },
         {
             cardId: 'InsightComments',
@@ -183,7 +194,8 @@ var dataStore = {
             border: 'red',
             imgAlign: 'right',
             linkText: "Schedule a Demo>",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: ''
         },
         {
             cardId: 'AI',
@@ -196,7 +208,8 @@ var dataStore = {
             border: 'red',
             imgAlign: 'right',
             linkText: "Schedule a Demo>",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: ''
         },
         {
             cardId: 'DocLibrary',
@@ -209,7 +222,8 @@ var dataStore = {
             border: 'red',
             imgAlign: 'right',
             linkText: "Schedule a Demo>",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: ''
         },
         {
             cardId: 'Exporting',
@@ -222,7 +236,8 @@ var dataStore = {
             border: 'red',
             imgAlign: 'left',
             linkText: "Schedule a Demo>",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: ''
         },
         {
             cardId: 'Team',
@@ -235,7 +250,8 @@ var dataStore = {
             border: 'black',
             imgAlign: 'left',
             linkText: "",
-            linkAddress: "#"
+            linkAddress: "#",
+            overlayImg: ''
         }
     ],
     dividerDetails: [
