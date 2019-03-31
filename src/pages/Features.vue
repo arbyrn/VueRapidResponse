@@ -33,7 +33,7 @@
                                 <br>
                                 <span>TOOL</span>
                                 <br>
-                                <button>See Benefits</button>
+                                <a href="#collection">See Benefits</a>
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -44,7 +44,7 @@
                                 <br>
                                 <span>PORTAL</span>
                                 <br>
-                                <button>See Benefits</button>
+                                <a href="#analysis">See Benefits</a>
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -135,7 +135,7 @@ export default {
     }
     .btnSeeDemo {
         margin: 15px;
-        background-color: red;
+        background-color: #E11B22;
         border-radius: 6px;
         color:white;
         border-color: red;
@@ -164,15 +164,26 @@ export default {
         top: 40px;
        
     }
-    #InsightCollToolDiv button {
+    #InsightCollToolDiv a {
+        text-decoration: none;
         background-color: white;
-        margin-bottom: 5px;
+        padding: 3px 3px;
         border: 1px solid black;
-        font-size: 12px;
+        border-radius:3px;
+        font-size: 14px;
+        text-decoration: none;
+        color: initial;
+        font-weight:600;
+        transition: all 0.5s ease;
     }
+    #InsightCollToolDiv a:hover {
+        background-color: black;
+        color:white;
+    }
+
     #InsightAnalysisToolDiv{
         color: white;
-        border: 2px solid red;
+        border: 2px solid r#E11B22;
         font-family: Arial;
         font-size: 18px;
         background-color: grey;
@@ -204,15 +215,24 @@ export default {
         position: absolute;
         left: 200px;
         top: 40px;
-        z-index: 500;
     }
     
-    #InsightAnalysisToolDiv button {
+    #InsightAnalysisToolDiv a {
         background-color: white;
         margin-bottom: 5px;
-        border: 1px solid red;
+        border: 1px solid #E11B22;
+        border-radius:3px;
         font-size: 12px;
+        font-weight:600;
+        text-decoration: none;
+        padding: 3px 3px;
+        color: initial;
+        transition: all 0.5s ease;
     }
+    #InsightAnalysisToolDiv a:hover {
+        background-color: #E11B22;
+        color:white;
+    }   
 
     @keyframes arrowRoll
 {
