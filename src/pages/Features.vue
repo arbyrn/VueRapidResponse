@@ -14,7 +14,6 @@
                     </div>
                     <div class="row align-items-center">                    
                         <div class="col-md-3">
-                            <!-- <img src="http://via.placeholder.com/200x250"/> -->
                             <h1 class="Black">Insights</h1>
                             <ul class="howitworkslist">
                                 <li>Clinical Trials</li>
@@ -27,7 +26,6 @@
                            
                         </div>
                         <div class="col-md-3">
-                            <!-- <img src="http://via.placeholder.com/200x250"/> -->
                             <div id="InsightCollToolDiv" class="align-middle">
                                 <span>INSIGHT</span>
                                 <br>
@@ -39,7 +37,6 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <!-- <img src="http://via.placeholder.com/200x250"/> -->
                             <div id="InsightAnalysisToolDiv">
                                 <span>INSIGHT</span>
                                 <br>
@@ -71,8 +68,6 @@
                     <hr>
                 </div>
             </div>
-        <EctFeature card="RealTime"></EctFeature>
-        <EctFeature card="MedStrategy"></EctFeature>
         <RnRDivider id="collection" dividerId="8"></RnRDivider>
         <EctFeature card="Customizable"></EctFeature>
         <EctFeature card="MeanInsights"></EctFeature>
@@ -90,6 +85,7 @@
         <EctFeature card="InsightComments"></EctFeature>
         <RnRDivider dividerId="4"></RnRDivider>
         <EctFeature card="AI"></EctFeature>
+        <EctFeature card="Trends"></EctFeature>
         <EctFeature card="DocLibrary"></EctFeature>
         <EctFeature card="Exporting"></EctFeature>
         <RnRDivider dividerId="5"></RnRDivider>
@@ -135,6 +131,7 @@ export default {
     }
     .howitworkslist{
         list-style: none;
+        padding:0;
     }
     .btnSeeDemo {
         margin: 15px;
@@ -163,7 +160,7 @@ export default {
         background-size: 100%;     
         content: "";        
         position: absolute;       
-        left: -30px;
+        left: -60px;
         top: 40px;
        
     }
@@ -191,9 +188,12 @@ export default {
         background-size: 100%;           
         content:"";        
         position: absolute;
-        left: -30px;
+        left: -90px;
         top: 40px;
+        -webkit-animation: arrowRoll 2s infinite; /* Chrome, Safari, Opera */
+        animation: arrowRoll 2s infinite;
     }
+
     #InsightAnalysisToolDiv::after{
         display:inline-block;
         width: 85px;
@@ -202,8 +202,9 @@ export default {
         background: url('../img/greyredarrow.png') no-repeat 0 0;
         background-size: 100%;        
         position: absolute;
-        left: 160px;
+        left: 200px;
         top: 40px;
+        z-index: 500;
     }
     
     #InsightAnalysisToolDiv button {
@@ -213,5 +214,14 @@ export default {
         font-size: 12px;
     }
 
-    
+    @keyframes arrowRoll
+{
+    0% {
+        left: -120px;
+    }
+   
+    100% {
+        left: -50px;
+    }
+}
 </style>

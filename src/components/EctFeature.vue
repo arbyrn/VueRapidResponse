@@ -108,7 +108,7 @@
 <style scoped>
     .feature {
         padding-left: 50px;
-        margin: 15px 0;
+        margin: 15px 0 45px 0;
     }
 
     .featureHeader {
