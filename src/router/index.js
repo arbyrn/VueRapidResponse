@@ -31,7 +31,7 @@ export default new Router({
       component: OurTeam
     },
     {
-      path: '/ctaform',
+      path: '/ctapage',
       name: 'CTAPage',
       component: CTAPage
     }

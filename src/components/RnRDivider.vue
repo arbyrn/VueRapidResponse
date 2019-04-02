@@ -4,7 +4,7 @@
             <p v-html="title"></p>
         </div>                           
         <div class="buttonContent">            
-            <button v-for="button in buttons" :key="button.btnText"  class="divider-Btn" :class="button.btnColor" @click="sayHi(button.btnLink)" >{{button.btnText}}</button>
+            <b-button v-for="button in buttons" :key="button.btnText"  class="divider-Btn" :class="button.btnColor" :to="button.btnLink" v-html="button.btnText"></b-button>
         </div>
     </div>
 </template>
@@ -77,14 +77,14 @@
         margin: 10px 10px;
     }
 
-    button.divider-Btn.btnBlack {
+    .divider-Btn.btnBlack {
         background-color: black;
         color: white;
         border: 6px solid white;
         
     }
 
-    button.divider-Btn.btnRed {
+    .divider-Btn.btnRed {
         background-color: red;
         color: white;
         border: 3px solid white;
@@ -102,7 +102,7 @@
         margin-right: -50vw; */
     }
 
-    button.divider-Btn.btnWhite {
+    .divider-Btn.btnWhite {
         background-color: #FFFFFF;
         color: #505050;
         border: 3px solid black;

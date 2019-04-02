@@ -36,7 +36,7 @@
             </div>
         </div>        
         <div class="row text-left">
-            <div class="col-9 offset-3"> &#169 ECT Technologies LLC. All Rights Reserved</div>
+            <div class="col-9 offset-3"> &#169; ECT Technologies LLC. All Rights Reserved</div>
         </div>
         <div class="row text-left">
             <div class="col-9 offset-3">

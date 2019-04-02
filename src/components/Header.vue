@@ -10,23 +10,16 @@
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav>
                     <b-nav-item-dropdown text="Features" right>
-                        <b-dropdown-item href="#">    
-                            <router-link to="/features">How it Works</router-link>
-                        </b-dropdown-item>
-                        <b-dropdown-item href="#"><router-link to="/features#collection" >Collection</router-link></b-dropdown-item>
-                        <b-dropdown-item href="#"><router-link to="/features#analysis" >Analysis</router-link></b-dropdown-item>
+                        <b-dropdown-item to="/features">How it Works</b-dropdown-item>                        
+                        <b-dropdown-item to="/features#collection">Collection</b-dropdown-item>
+                        <b-dropdown-item to="/features#analysis">Analysis</b-dropdown-item>
                     </b-nav-item-dropdown>
                     <b-nav-item-dropdown text="Plans" right>
-                        <b-dropdown-item href="#">
-                            <router-link to="/plans">Plans</router-link>
-                        </b-dropdown-item>
-                        <b-dropdown-item href="#">
-                            <router-link to="/plans#PilotProgram">Pilot</router-link>
-                            </b-dropdown-item>
-                        <b-dropdown-item href="#">FAQ</b-dropdown-item>
+                        <b-dropdown-item to="/plans">Plans</b-dropdown-item>
+                        <b-dropdown-item to="/plans#PilotProgram">Pilot</b-dropdown-item>
+                        <!-- <b-dropdown-item href="#">FAQ</b-dropdown-item> -->
                     </b-nav-item-dropdown>
-                    <b-nav-item href="#"><router-link to="/ourteam">Our Team</router-link></b-nav-item>
-                        
+                    <b-nav-item to="/ourteam">Our Team</b-nav-item>                        
                     <b-nav-item href="#">Support</b-nav-item>
                     <b-nav-item href="#">Login</b-nav-item>
                 </b-navbar-nav>

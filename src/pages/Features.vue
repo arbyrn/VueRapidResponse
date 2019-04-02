@@ -61,7 +61,7 @@
                     </div>
                     <div class="row">                    
                         <div class="col-md-12">
-                            <button class="btnSeeDemo rounded-3">See a Demo</button>
+                            <b-button class="btnSeeDemo" to="ctapage">See a Demo</b-button>
                         </div>
                                         
                     </div>
@@ -76,19 +76,19 @@
         <EctFeature card="CollectAnywhere"></EctFeature>
         <EctFeature card="SSO"></EctFeature>
         <EctFeature card="SupportingDocs"></EctFeature>
-        <RnRDivider dividerId="3"></RnRDivider>       
+        <RnRDivider dividerId="9"></RnRDivider>       
         <EctFeature card="MultiDevice"></EctFeature>        
         <EctFeature card="Templates"></EctFeature>
         <RnRDivider id="analysis" dividerId="7"></RnRDivider>
         <EctFeature card="RealTimeReports"></EctFeature>
         <EctFeature card="Translation"></EctFeature>
         <EctFeature card="InsightComments"></EctFeature>
-        <RnRDivider dividerId="4"></RnRDivider>
+        <RnRDivider dividerId="1"></RnRDivider>
         <EctFeature card="AI"></EctFeature>
         <EctFeature card="Trends"></EctFeature>
         <EctFeature card="DocLibrary"></EctFeature>
         <EctFeature card="Exporting"></EctFeature>
-        <RnRDivider dividerId="5"></RnRDivider>
+        <RnRDivider dividerId="2"></RnRDivider>
         <RnRFooter></RnRFooter>        
     </div>
 </template>
@@ -140,7 +140,7 @@ export default {
         color:white;
         border-color: red;
         font-size: 20px;
-        width: 140px;
+        width: 150px;
         height: 45px;
     }
     #InsightCollToolDiv{

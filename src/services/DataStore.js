@@ -277,12 +277,12 @@ var dataStore = {
                 {
                     btnText: 'See Plans',
                     btnColor: 'btnRed',
-                    btnLink: '#',
+                    btnLink: '/plans',
                 },
                 {
                     btnText: 'Schedule Free Consult',
                     btnColor: 'btnBlack',
-                    btnLink: '#',
+                    btnLink: '/ctapage',
                 },
             ]
         },
@@ -292,7 +292,7 @@ var dataStore = {
             dividerColor: 'Red',
             buttons: [
                 {
-                    btnText: 'Follow us on LinkedIn',
+                    btnText: 'Follow us on LinkedIn!',
                     btnColor: 'btnWhite',
                     btnLink: '#',
                 }
@@ -367,6 +367,18 @@ var dataStore = {
                     btnText: 'See a Demo',
                     btnColor: 'btnBlack',
                     btnLink: '#',
+                }
+            ]
+        },
+        {
+            dividerId: 9,
+            title: 'Need Help picking your Medical Insights Vendor',
+            dividerColor: 'Red',
+            buttons: [
+                {
+                    btnText: 'Request Consult',
+                    btnColor: 'btnBlack',
+                    btnLink: '/ctapage',
                 }
             ]
         }

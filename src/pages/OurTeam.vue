@@ -9,27 +9,38 @@
                 <div class="Content">
                     You don't have a cookie-cutter business and you don't need a cookie-cutter medical insights solution.
                 </div>            
-                <button class="btnSeeDemo rounded-3">Connect With Us</button>
+                <router-link to="/ctapage"><button class="btnSeeDemo rounded-3">Connect With Us</button></router-link>
                 
             </div>
             <hr>
             <EctFeature card="Team"></EctFeature> 
             <div class="container">
-                <p class="Header">
-                    Why do <span class="Red">Fortune 500</span> and <span class="Red">Small Businesses</span> choose to partner with ECT Technologies?
-                </p>
-                <p class="copyText">
-                    There's no better teacher than experience, and experience is what the ECT Technologies team brings 
-                    when designing a custom medical insights tool for your business.
-                </p>
-                <ul class="copyText">
-                    <li>Over 30 years of <b>pharmaceutical industry</b> experience</li>
-                    <li>Over 25 years in <b>enterprise software development</b> experience</li>
-                    <li>Servicing <b>Fortune 500</b> and <b>Small Businesses</b> in the Pharmaceutical and Biotechnical industries.</li>
-                    <li>Over 30 years of pharmaceutical industry experience</li>           
-                </ul>
-                <EctFeature card="MeanInsights"></EctFeature>
-                <div>
+                <div class="row">
+                    <p class="Header">
+                        Why do <span class="Red">Fortune 500</span> and <span class="Red">Small Businesses</span> choose to partner with ECT Technologies?
+                    </p>
+                    <p class="copyText">
+                        There's no better teacher than experience, and experience is what the ECT Technologies team brings 
+                        when designing a custom medical insights tool for your business.
+                    </p>
+                    <ul class="copyText">
+                        <li>Over 30 years of <b>pharmaceutical industry</b> experience</li>
+                        <li>Over 25 years in <b>enterprise software development</b> experience</li>
+                        <li>Servicing <b>Fortune 500</b> and <b>Small Businesses</b> in the Pharmaceutical and Biotechnical industries.</li>
+                        <li>Over 30 years of pharmaceutical industry experience</li>           
+                    </ul>
+                    <img id="ourcustomersimg" src="../img/Picture1.png" />
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-8 offset-2">
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <EctFeature card="MeanInsights"></EctFeature>
+                </div>
+                <div class="row">
                     
                     <p class="Header">Where have clients seen the greatest improvements?</p>
                     <ul class="copyText">
@@ -39,18 +50,20 @@
                     </ul>
 
                 </div>
-                <div class="copyText">
-                    <p class="Header">Our Leadership is Committed to Partnering with You</p>
-                    We will not be a faceless technology vendor to your organization. We are so dedicated to this partnership that we encourage
-                    you to <a href=#>reach out directly to our Managing Partner</a>, Richard Olsson, with your questions and concerns. Richard and the entire 
-                    team at ECT Technologies are 100% committed to improving the efficiency and effectiveness of your medical affairs department 
-                    through our customized solutions.
-                    <p class="copyText">
-                    Want more information about our team and how we can help your Medical Insights process? <a href=#>Connect with Richard on LinkedIn</a> Today.
-                    </p>
-                    <div class="col-md-12">
-                            <button class="btnSeeDemo rounded-3">Connect with Us</button>
-                        </div>
+                <div class="row">
+                    <div class="copyText">
+                        <p class="Header">Our Leadership is Committed to Partnering with You</p>
+                        We will not be a faceless technology vendor to your organization. We are so dedicated to this partnership that we encourage
+                        you to <a href=#>reach out directly to our Managing Partner</a>, Richard Olsson, with your questions and concerns. Richard and the entire 
+                        team at ECT Technologies are 100% committed to improving the efficiency and effectiveness of your medical affairs department 
+                        through our customized solutions.
+                        <p class="copyText">
+                        Want more information about our team and how we can help your Medical Insights process? <a href=#>Connect with Richard on LinkedIn</a> Today.
+                        </p>
+                        <div class="col-md-12">
+                                <button class="btnSeeDemo rounded-3">Connect with Us</button>
+                            </div>
+                    </div>
                 </div>
             </div>        
             <RnRFooter></RnRFooter>
@@ -77,6 +90,10 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    .row{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
     .Header{
         font: bold 44px tahoma;
         color:black;
@@ -134,5 +151,11 @@ export default {
 
     .Black {
         color: black;
+    }
+    #ourcustomersimg {
+        position: relative;
+         margin-left:50%;
+         margin-right:50%;
+         transform: translateX(-50%);
     }
 </style>

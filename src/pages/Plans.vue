@@ -19,41 +19,42 @@
                             <tr><th>Tier:</th><th>Single TA</th><th>Multiple TA</th><th>Enterprise</th></tr>
                             </thead>
                             <tr> <td>Theraputic Areas:</td><td>1</td><td>2</td><td>3 or more</td></tr>
-                            <tr> <td>Annual Insights:</td><td> &lt 10,000</td><td>10,000 - 20,0000</td><td> &gt 20,000</td></tr>
+                            <tr> <td>Annual Insights:</td><td> &lt; 10,000</td><td>10,000 - 20,0000</td><td> &gt; 20,000</td></tr>
                             <tr> <td></td><td colspan="3"><div class="RequestInfo">Request more Info</div></td></tr>
-                            <tr> <td>Unlimited Users</td><td class="Red"> &#x2714</td><td class="Red">&#x2714</td><td class="Red"> &#x2714</td></tr>
-                            <tr> <td>Hosting and Backup</td><td class="Red"> &#x2714</td><td class="Red">&#x2714</td><td class="Red"> &#x2714</td></tr>
-                            <tr> <td>Support and Maintentance</td><td class="Red">&#x2714</td><td class="Red">&#x2714</td><td class="Red"> &#x2714</td></tr>
-                            <tr> <td>Additional User On Boarding</td><td class="Red"> &#x2714</td><td class="Red">&#x2714</td><td class="Red"> &#x2714</td></tr>
-                            <tr> <td>Collection Field Value Changes</td><td class="Red">&#x2714</td><td class="Red">&#x2714</td><td class="Red"> &#x2714</td></tr>
+                            <tr> <td>Unlimited Users</td><td class="Red"> &#x2714;</td><td class="Red">&#x2714;</td><td class="Red"> &#x2714;</td></tr>
+                            <tr> <td>Hosting and Backup</td><td class="Red"> &#x2714;</td><td class="Red">&#x2714;</td><td class="Red"> &#x2714;</td></tr>
+                            <tr> <td>Support and Maintentance</td><td class="Red">&#x2714;</td><td class="Red">&#x2714;</td><td class="Red"> &#x2714;</td></tr>
+                            <tr> <td>Additional User On Boarding</td><td class="Red"> &#x2714;</td><td class="Red">&#x2714;</td><td class="Red"> &#x2714;</td></tr>
+                            <tr> <td>Collection Field Value Changes</td><td class="Red">&#x2714;</td><td class="Red">&#x2714;</td><td class="Red"> &#x2714;</td></tr>
                         </table>
                     </div>
                 </div>
             </div>
-            
-            <div id="PilotProgram" class="row">
-                <div class="col-md-9 text-left">
-                    <h2><img class="targetImage" alt="target" src="../img/target.png"/>Pilot Program</h2>
-                    <p class="copyText">Want to give Rapid Response Insights a test drive before commiting to an annual contract? Test the program for 3 months
-                        and the fee will be applied to your implementation.
+            <div class="container">
+                <div id="PilotProgram" class="row">
+                    <div class="col-md-9 text-left">
+                        <h2><img class="targetImage" alt="target" src="../img/target.png"/>Pilot Program</h2>
+                        <p class="copyText">Want to give Rapid Response Insights a test drive before commiting to an annual contract? Test the program for 3 months
+                            and the fee will be applied to your implementation.
+                            </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h1>Low Cost</h1>
+                        <p>3-Month Pilot</p>
+                        <router-link to="/ctapage"><button class="btnSeeDemo">Learn More</button></router-link>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <img id="redGlassesImg" src="../img/redglasses.jpg" alt="reading glasses">
+                    </div>
+                    <div class="col-md-6 copyText">
+                        <b>Want to know more?</b>
+                        <p class="copyText">For more information about plans, pricing and evaluating your organization for a pilot program, schedule a freee consult.
+                            
                         </p>
-                </div>
-                <div class="col-md-3">
-                    <h1>Low Cost</h1>
-                    <p>3-Month Pilot</p>
-                    <router-link to="/ctaform"><button class="btnSeeDemo">Learn More</button></router-link>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-5">
-                    <img id="redGlassesImg" src="../img/redglasses.jpg" alt="reading glasses">
-                </div>
-                <div class="col-md-6 copyText">
-                    <b>Want to know more?</b>
-                    <p class="copyText">For more information about plans, pricing and evaluating your organization for a pilot program, schedule a freee consult.
-                        
-                    </p>
-                   <button class="btnSeeDemo rounded-3">See a Demo</button>
+                    <router-link to="/ctapage"><button to="/ctapage" class="btnSeeDemo rounded-3">See a Demo</button></router-link>
+                    </div>
                 </div>
             </div>
             <RnRFooter></RnRFooter>
@@ -81,6 +82,10 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    .row{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
     .Header{
         font: bold 44px tahoma;
         color:black;

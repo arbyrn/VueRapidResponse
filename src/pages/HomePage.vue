@@ -8,7 +8,7 @@
                 </div>            
             </div>
             <div class="row">
-                <div class="col-4 offset-4"><button class="btnSeeDemo rounded-3">Free Consult</button></div>               
+                <div class="col-4 offset-4"><b-button class="btnSeeDemo" to="/ctapage">Free Consult</b-button></div>               
             </div>
             <div class="row">    
                  <div class="col-4 offset-4"><span class="ourNumber">(888) 843-5691</span></div>                
@@ -65,7 +65,7 @@ export default {
         color:white;
         border-color: red;
         font-size: 20px;
-        width: 140px;
+        width: 150px;
         height: 45px;
     }
 
