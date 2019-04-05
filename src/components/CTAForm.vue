@@ -36,7 +36,7 @@
         </div>
         <div class="row">
             <div class="col-sm-1">
-                <img class="col-sm-1" src="../img/lockimg.png" alt="Lock pic">
+                <img id="CTALockImg" class="" src="../img/lockimg.png" alt="Lock pic">
             </div>
             <div class="col-sm-11">
                 <span>We hate spam. We will never sell or share your information. See our <a href="#">privacy policy</a>.</span>
@@ -58,8 +58,8 @@ export default {
 }
 </script>
 <style scoped>
-div.CTAForm {
-    
+input {
+    height: 3em;
 }
 div.CTAForm div input{
     border: 2px solid lightgray;
@@ -76,6 +76,9 @@ div.CTAForm div input{
 }
 .Red {
     color: red;
+}
+#CTALockImg{
+
 }
 #btnSchedNow {
     margin: 12px 0px 12px 42px;

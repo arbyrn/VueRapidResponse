@@ -1,8 +1,8 @@
 <template>
     <div id="CTAFormPage container">
-            <div class="row">
-                <div class="ectLogo col-2"><img alt="ECT logo" src="../img/ect_logo_redblk.gif"></div>
-                <div class="homeContent col-10">            
+            <div class="row align-items-center">
+                <div class="ectLogo col-2 offset-2" to="/"><img alt="ECT logo" src="../img/ect_logo_redblk.gif"></div>
+                <div class="homeContent col-8">            
                     <div class="Header"><span class="grey"><h1>Rapid Response Insights</h1></span>
                     </div>
                 </div>
@@ -11,12 +11,12 @@
                 <div class="row">
                     <div id="CTAScrollContainer" class="col-md-5">
                         <div class="row align-items-center"> 
-                            <div class="col-sm-8 offset-sm-2"> <CTAScroll></CTAScroll></div>                            
+                            <div class="col-sm-12 "> <CTAScroll></CTAScroll></div>                            
                         </div>
                     </div>
                     <div id="CTASpace" class="col-md-1"></div>
                     <div id="CTAForm" class="col-md-5">
-                        <CTAForm></CTAForm>
+                        <div class="col-sm-12 "><CTAForm></CTAForm></div>    
                     </div>
                 </div>
             </div>
@@ -46,6 +46,7 @@
     .Header .grey{
         color:gray;
     }
+  
     .Content{
         font: 28px tahoma;
         color:gray;
@@ -102,7 +103,7 @@
     #CTAForm {
         border: 2px solid lightgray;
         border-radius: 50px;
-        height: 500px;
+        height: auto;
     }
     .ectLogo img{
         width:100%
@@ -111,7 +112,4 @@
         display:inline-block;
     }
     
-    CTAScroll {
-        margin-top: 50px;
-    }
 </style>
