@@ -39,7 +39,7 @@
                             </p>
                     </div>
                     <div class="col-md-3">
-                        <h1>Low Cost</h1>
+                        <h1>Try it out</h1>
                         <p>3-Month Pilot</p>
                         <router-link to="/ctapage"><button class="btnSeeDemo">Learn More</button></router-link>
                     </div>

@@ -46,7 +46,7 @@ var dataStore = {
         {
             cardId: 'Customizable',
             featureHeader: 'Customizable',
-            featureText: 'Collection tool field values can be <strong>customized for specific markets and therapy areas</strong> within the company.',
+            featureText: 'Collection tool field values can be <strong>customized for specific markets and therapy areas</strong> within your company.',
             callout: 'Customizable',
             calloutColor: 'black',
             mainImg: 'rock-people.jpg',
@@ -88,7 +88,7 @@ var dataStore = {
         {
             cardId: 'CollectAnywhere',
             featureHeader: 'Anytime. Anywhere.',
-            featureText: '<strong>Insights can be collected and used anywhere</strong>. When an Internet connection is not available insights are transmitted automatically the next time an Internet connection is available.',
+            featureText: '<strong>Insights can be collected and accessed anywhere</strong>. When an Internet connection is not available insights are transmitted automatically the next time an Internet connection is available.',
             callout: 'Collect Anywhere',
             calloutColor: 'black',
             mainImg: 'meeting.jpg',
@@ -157,7 +157,7 @@ var dataStore = {
         },
         {
             cardId: 'RealTimeReports',
-            featureHeader: 'Reports in Real Time',
+            featureHeader: 'Real-time Reporting',
             featureText: 'Insights appear real-time in the analysis portal.  <strong>Eliminates costly delays in bottleneck review processes</strong> that prevent stakeholders from accessing Insights timely.',
             callout: 'Real Time Reporting',
             calloutColor: 'red',
@@ -294,7 +294,7 @@ var dataStore = {
                 {
                     btnText: 'Follow us on LinkedIn!',
                     btnColor: 'btnWhite',
-                    btnLink: '#',
+                    btnLink: 'https://www.linkedin.com/in/richardwolsson/',
                 }
             ]
         },
@@ -342,7 +342,7 @@ var dataStore = {
                 {
                     btnText: 'See a Demo',
                     btnColor: 'btnBlack',
-                    btnLink: '#',
+                    btnLink: '/ctapage',
                 }
             ]
         },
@@ -354,7 +354,7 @@ var dataStore = {
                 {
                     btnText: 'See a Demo',
                     btnColor: 'btnBlack',
-                    btnLink: '#',
+                    btnLink: '/ctapage',
                 }
             ]
         },
@@ -366,7 +366,7 @@ var dataStore = {
                 {
                     btnText: 'See a Demo',
                     btnColor: 'btnBlack',
-                    btnLink: '#',
+                    btnLink: '/ctapage',
                 }
             ]
         },

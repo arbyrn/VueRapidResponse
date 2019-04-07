@@ -17,18 +17,32 @@
         </div>
         <div class="row"> 
             <div class="col-sm-12">          
-                <input id="inFirstName" placeholder="First Name"/>            
-                <input id="inLastName" placeholder="Last Name"/>
+                <input id="inFirstName" name="inFirstName" placeholder="First Name"/>            
+                <input id="inLastName" name="inLastName" placeholder="Last Name"/>
             </div>
         </div>        
         <div class="row">
             <div class="col-sm-12">
-            <input id="inWorkEmail" placeholder="Work Email"/>
+            <input id="inWorkEmail" name="inWorkEmail" placeholder="Work Email"/>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12">
-            <input id="inPhoneNumber" placeholder="Best Phone Number"/>
+            <input id="inPhoneNumber" name="inPhoneNumber" placeholder="Best Phone Number"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-11 offset-1">
+                <b-form-checkbox id="chkScheduleDemo"  name="chkScheduleDemo" class="float-left">
+                    Schedule a demo
+                </b-form-checkbox>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-11 offset-1">                
+                 <b-form-checkbox id="chkPleaseCall" name="chkPleaseCall" class="float-left">
+                    Please call, I would like more information.
+                </b-form-checkbox>
             </div>
         </div>
         <div class="row">
@@ -59,7 +73,7 @@ export default {
 </script>
 <style scoped>
 input {
-    height: 3em;
+    height: 2.25em;
 }
 div.CTAForm div input{
     border: 2px solid lightgray;
@@ -76,9 +90,6 @@ div.CTAForm div input{
 }
 .Red {
     color: red;
-}
-#CTALockImg{
-
 }
 #btnSchedNow {
     margin: 12px 0px 12px 42px;
@@ -101,4 +112,5 @@ div.CTAForm div input{
 #inCompany, #inWorkEmail, #inPhoneNumber{
     width: 370px;
 }
+
 </style>

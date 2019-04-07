@@ -1,7 +1,7 @@
 <template>
     <div class="RnRFooter container">
         <div class="row text-left">
-            <div class="col-9 offset-3"> <h2>For the latest, follow us on<img id="footerLinkedIn" src="../img/redlinkedin612x612.png" /></h2></div>
+            <div class="col-9 offset-3"> <h2>For the latest, follow us on LinkedIn <router-link to="https://www.linkedin.com/in/richardwolsson/"><img id="footerLinkedIn" src="../img/redlinkedin612x612.png" /></router-link></h2></div>
         </div>
         <div class="row text-left">
             <div class="col-9 offset-3"><h2>Schedule your Free Consult<img id="footerPhone" src="../img/redphone256x256.png"/></h2></div>
@@ -12,15 +12,15 @@
         <div class="row text-left">
             <div class="col-9 offset-3">
                 <nav id="footerNavLinks">
-                    <span><a href="#">Features</a></span>
+                        <router-link to="/"><span><a href="#">Home</a></span></router-link>
+                        |
+                        <router-link to="/features"><span><a href="#">Features</a></span></router-link>
                         |                   
-                        <span><a href="#">Plans</a></span>
+                        <router-link to="/plans"><span><a href="#">Plans</a></span></router-link>
                         |                              
-                        <span><a href="#">Our Team</a></span>
+                        <router-link to="/ourteam"><span><a href="#">Our Team</a></span></router-link>
                         |                   
-                        <span><a href="#">Support</a></span>
-                        |                   
-                        <span><a href="#">Login</a></span>               
+                        <router-link to="/"><span><a href="#">Login</a></span></router-link>           
                     <!-- <ul>
                         <li><a href="#">Features</a></li>
                         <li>|</li>                   

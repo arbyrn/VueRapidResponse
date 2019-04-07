@@ -2,13 +2,13 @@
     <div>
         <Header></Header>
         <div class="homeContent">            
-            <div class="Header"><span class="grey">Transforming</span> Insights <span class="grey">into</span> Actions
-                <div class="Content">
-                    Collect, analyze and act on Medical Affairs Medical Insights faster and better than your competitors, without breaking your budget.
-                </div>            
-            </div>
+            <div class="Header"><span class="grey">Transforming</span> Insights <span class="grey">into</span> Actions</div>
+                           
+            <div class="Content">
+                Collect, analyze and act on Medical Affairs Medical Insights faster and better than your competitors, without breaking your budget.
+            </div> 
             <div class="row">
-                <div class="col-4 offset-4"><b-button class="btnSeeDemo" to="/ctapage">Free Consult</b-button></div>               
+                <div class="col-4 offset-4"><b-button class="btnSeeDemo" to="/ctapage">Free Consultation</b-button></div>               
             </div>
             <div class="row">    
                  <div class="col-4 offset-4"><span class="ourNumber">(888) 843-5691</span></div>                
@@ -60,13 +60,15 @@ export default {
 
     .btnSeeDemo {
         margin: 15px;
+        padding-top: 1px;
         background-color: red;
         border-radius: 6px;
         color:white;
         border-color: red;
-        font-size: 20px;
+        font-size: 18px;
+      
         width: 150px;
-        height: 45px;
+        height: 55px;
     }
 
     .ourNumber {

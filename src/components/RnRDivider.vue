@@ -4,7 +4,22 @@
             <p v-html="title"></p>
         </div>                           
         <div class="buttonContent">            
-            <b-button v-for="button in buttons" :key="button.btnText"  class="divider-Btn" :class="button.btnColor" :to="button.btnLink" v-html="button.btnText"></b-button>
+            <b-button v-if="button.btnLink.charAt(0) == '/'"
+                v-for="button in buttons" 
+                :key="button.btnText"  
+                class="divider-Btn" 
+                :class="button.btnColor"                 
+                :to="button.btnLink" 
+                v-html="button.btnText" >
+            </b-button>
+            <b-button v-else
+                v-for="button in buttons" 
+                :key="button.btnText"  
+                class="divider-Btn" 
+                :class="button.btnColor"                 
+                :href="button.btnLink" 
+                v-html="button.btnText" >
+            </b-button>
         </div>
     </div>
 </template>
@@ -67,24 +82,28 @@
         color: rgb(0, 0, 0);        
     }
 
-    .divider-Btn{
+    div.contentDivider .divider-Btn{
         border-radius: 7px;
         width: 270px;
         height: 50px;
         font-size: 18px;
         /* margin-bottom: 15px; */
         color: white;
-        margin: 10px 10px;
+        margin: .85rem .85rem;
+        padding: .5rem;
+        text-align: center;
+        vertical-align: middle;
     }
 
-    .divider-Btn.btnBlack {
+    div.contentDivider .divider-Btn.btnBlack {
         background-color: black;
         color: white;
         border: 6px solid white;
+        padding: .4rem;
         
     }
 
-    .divider-Btn.btnRed {
+    div.contentDivider .divider-Btn.btnRed {
         background-color: red;
         color: white;
         border: 3px solid white;
@@ -102,7 +121,7 @@
         margin-right: -50vw; */
     }
 
-    .divider-Btn.btnWhite {
+    div.contentDivider .divider-Btn.btnWhite {
         background-color: #FFFFFF;
         color: #505050;
         border: 3px solid black;

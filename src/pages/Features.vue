@@ -5,7 +5,7 @@
                 <div class="Header">Features <span class="grey">and Benefits</span>
                 </div>
                 <div class="Content">
-                    Rapid Response Insights will sepearate the medical insights fro the cacophony of data so you can react and respond faster than your pharmaceutical competitors.
+                    Rapid Response Insights will sepearate the medical insights from the cacophony of data so you can react and respond faster than your pharmaceutical competitors.
                 </div>            
                 <br>
                 <div id="HowItWorks" class="containter">

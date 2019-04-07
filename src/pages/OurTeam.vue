@@ -54,11 +54,11 @@
                     <div class="copyText">
                         <p class="Header">Our Leadership is Committed to Partnering with You</p>
                         We will not be a faceless technology vendor to your organization. We are so dedicated to this partnership that we encourage
-                        you to <a href=#>reach out directly to our Managing Partner</a>, Richard Olsson, with your questions and concerns. Richard and the entire 
+                        you to <a href="mailto:solutions@ecttechnologies.com">reach out directly to our Managing Partner</a>, Richard Olsson, with your questions and concerns. Richard and the entire 
                         team at ECT Technologies are 100% committed to improving the efficiency and effectiveness of your medical affairs department 
                         through our customized solutions.
                         <p class="copyText">
-                        Want more information about our team and how we can help your Medical Insights process? <a href=#>Connect with Richard on LinkedIn</a> Today.
+                        Want more information about our team and how we can help your Medical Insights process? <a href="mailto:solutions@ecttechnologies.com">Connect with Richard on LinkedIn</a> Today.
                         </p>
                         <div class="col-md-12">
                                 <button class="btnSeeDemo rounded-3">Connect with Us</button>

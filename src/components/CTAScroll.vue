@@ -8,7 +8,7 @@
             img-width="600"
             img-height="800"
         >
-            <b-carousel-slide caption="First slide" img-src="../img/FeedRealTime.png"/>
+            <b-carousel-slide caption="" img-src="../img/FeedRealTime.png"/>
             <b-carousel-slide caption="" img-src="../img/MedicalStrategy.png" />
             <b-carousel-slide caption="" img-src="../img/ShrinkCycleTime.png" />
             <b-carousel-slide caption="" img-src="../img/InsightsSince2004.png" />
