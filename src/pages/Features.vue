@@ -13,9 +13,9 @@
                         <div class="col-md-12"><H1>How it Works</H1></div>
                     </div>
                     <div class="row align-items-center">                    
-                        <div class="col-md-3">
+                        <div class="col-lg-2 col-md-12">
                             <h1 class="Black">Insights</h1>
-                            <ul class="howitworkslist">
+                            <ul class="howitworkslist insights">
                                 <li>Clinical Trials</li>
                                 <li>Thought Leaders</li>
                                 <li>Competitors</li>
@@ -25,7 +25,10 @@
                             </ul>
                            
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-lg-1 col-md-12 arrow arrow1">
+                            <img :src="getImgUrl('greyblackarrow.png')" />
+                        </div>
+                        <div class="col-lg-2 col-md-12">
                             <div id="InsightCollToolDiv" class="align-middle">
                                 <span>INSIGHT</span>
                                 <br>
@@ -36,7 +39,10 @@
                                 <a href="#collection">See Benefits</a>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-lg-1 col-md-12 arrow arrow2">
+                            <img :src="getImgUrl('greyblackarrow.png')" />
+                        </div>
+                        <div class="col-lg-2 col-md-12">
                             <div id="InsightAnalysisToolDiv">
                                 <span>INSIGHT</span>
                                 <br>
@@ -47,9 +53,12 @@
                                 <a href="#analysis">See Benefits</a>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-lg-1 col-md-12 arrow arrow3">
+                            <img :src="getImgUrl('greyblackarrow.png')" />
+                        </div>
+                        <div class="col-lg-2 col-md-12">
                             <h1 class="Black">Actions</h1>
-                            <ul class="howitworkslist">
+                            <ul class="howitworkslist actions">
                                 <li>Strategy</li>
                                 <li>Tactics</li>
                                 <li>Medical Plans</li>
@@ -109,6 +118,13 @@ export default {
         EctFeature,
         RnRDivider,
         RnRFooter
+    },
+    methods: {
+        getImgUrl(pic) {
+                if (pic != ''){
+                    return require('../img/' + pic);
+                }               
+            }
     }
 }
 </script>
@@ -132,6 +148,71 @@ export default {
     .howitworkslist{
         list-style: none;
         padding:0;
+        animation: FadeIn 2s 1;
+        -webkit-animation: FadeIn 2s 1;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+    }
+    .howitworkslist.insights {
+        animation-delay: .25s;
+    }
+    .arrow {
+         animation: FadeIn 2s 1;
+        -webkit-animation: FadeIn 2s 1;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+    }
+    .arrow1 {          
+        animation-delay: 1s;
+    }
+    .arrow img {          
+        width: 75px;
+        height: 60px;
+    }
+
+    #InsightCollToolDiv{
+        color: white;
+        font-family: TimesNewRoman;
+        font-size: 18px;
+        background-color: grey;
+        border-radius:25px;
+        width: 160px;
+        height: 140px;
+         animation: FadeIn 2s 1;
+        -webkit-animation: FadeIn 2s 1;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+        animation-delay: 1.5s;
+        padding-top: 15px;
+        margin: 8px auto 8px auto;
+    }
+
+     .arrow2{   
+        animation-delay: 2s;
+    }
+    #InsightAnalysisToolDiv{
+        color: white;
+        font-family: Arial;
+        font-size: 18px;
+        background-color: grey;
+        border-radius:25px;
+        width: 160px;
+        height: 140px;
+        padding-top: 15px;
+        -webkit-animation: FadeIn 2s 1; /* Chrome, Safari, Opera */
+        animation: FadeIn 2s 1;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+        animation-delay: 2.5s;
+        margin: 8px auto 8px auto;
+    }
+
+    .arrow3{
+        animation-delay: 3s;
+    }
+
+    .howitworkslist.actions {
+        animation-delay: 3.5s;
     }
     .btnSeeDemo {
         margin: 15px;
@@ -143,27 +224,7 @@ export default {
         width: 150px;
         height: 45px;
     }
-    #InsightCollToolDiv{
-        color: white;
-        border: 2px solid black;
-        font-family: TimesNewRoman;
-        font-size: 18px;
-        background-color: grey;
-        border-radius:25px;
-        width: 160px;
-        height: 140px;
-    }
-    #InsightCollToolDiv::before {        
-        width: 75px;
-        height: 60px;
-        background: url('../img/greyblackarrow.png') no-repeat 0 0;
-        background-size: 100%;     
-        content: "";        
-        position: absolute;       
-        left: -60px;
-        top: 40px;
-       
-    }
+
     #InsightCollToolDiv a {
         text-decoration: none;
         background-color: white;
@@ -181,41 +242,8 @@ export default {
         color:white;
     }
 
-    #InsightAnalysisToolDiv{
-        color: white;
-        border: 2px solid r#E11B22;
-        font-family: Arial;
-        font-size: 18px;
-        background-color: grey;
-        border-radius:25px;
-        width: 160px;
-        height: 140px;
-    }
-    #InsightAnalysisToolDiv::before{
-        
-        width: 75px;
-        height: 60px;
-        background: url('../img/blackarrow.png') no-repeat 0 0;
-        background-size: 100%;           
-        content:"";        
-        position: absolute;
-        left: -90px;
-        top: 40px;
-        -webkit-animation: arrowRoll 2s infinite; /* Chrome, Safari, Opera */
-        animation: arrowRoll 2s infinite;
-    }
+   
 
-    #InsightAnalysisToolDiv::after{
-        display:inline-block;
-        width: 85px;
-        height: 65px;        
-        content:"";
-        background: url('../img/greyredarrow.png') no-repeat 0 0;
-        background-size: 100%;        
-        position: absolute;
-        left: 200px;
-        top: 40px;
-    }
     
     #InsightAnalysisToolDiv a {
         background-color: white;
@@ -234,14 +262,28 @@ export default {
         color:white;
     }   
 
-    @keyframes arrowRoll
-{
-    0% {
-        left: -120px;
+    @keyframes FadeIn { 
+        0% {
+            opacity: 0;
+            transform: scale(.1);
+        }
+
+        85% {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+        100% {
+            transform: scale(1);
+        }
     }
-   
-    100% {
-        left: -50px;
+
+@media all and (max-width: 923px){
+    .arrow img {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
     }
 }
 </style>
