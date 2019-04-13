@@ -1,13 +1,14 @@
 <template>
     <div class="RnRFooter container">
+        <hr>
         <div class="row text-left">
-            <div class="col-9 offset-3"> <h2>For the latest, follow us on LinkedIn <router-link to="https://www.linkedin.com/in/richardwolsson/"><img id="footerLinkedIn" src="../img/redlinkedin612x612.png" /></router-link></h2></div>
+            <div class="col-9 offset-3"> <h3>For the latest, follow us on LinkedIn <router-link to="https://www.linkedin.com/in/richardwolsson/"><img id="footerLinkedIn" src="../img/redlinkedin612x612.png" /></router-link></h3></div>
         </div>
         <div class="row text-left">
-            <div class="col-9 offset-3"><h2>Schedule your Free Consult<img id="footerPhone" src="../img/redphone256x256.png"/></h2></div>
+            <div class="col-9 offset-3"><h3>Schedule your Free Consult<img id="footerPhone" src="../img/redphone256x256.png"/></h3></div>
         </div>
         <div class="row text-left">
-            <div class="col-9 offset-3 "><span class="FooterScript">Contact Us</span> <b class="Black">(888) 843-5691</b> | <a class="ECTEmail" href="mailto:solutions@ecttechnologies.com">solutions@ecttechnologies.com</a></div>
+            <div class="col-9 offset-3 "><span >Contact Us</span> <b class="Black">(888) 843-5691</b> | <a class="ECTEmail" href="mailto:solutions@ecttechnologies.com">solutions@ecttechnologies.com</a></div>
         </div>
         <div class="row text-left">
             <div class="col-9 offset-3">
@@ -38,7 +39,7 @@
         <div class="row text-left">
             <div class="col-9 offset-3"> &#169; ECT Technologies LLC. All Rights Reserved</div>
         </div>
-        <div class="row text-left">
+        <!-- <div class="row text-left">
             <div class="col-9 offset-3">
             <p> 
                 <nav>
@@ -50,7 +51,7 @@
                 </nav>
             </p>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -66,11 +67,13 @@ export default {
     }
 }
 </script>
-<style>
-    
+<style scoped>
+    hr {
+        margin: 6rem 0rem;
+    }
     .RnRFooter {
-        margin-top: 4rem; 
-        font-size: 24px;        
+        margin: 4rem 0rem; 
+        font-size: 18px;        
         color: gray;
         text-align: center;
         font-family: 'Indie Flower','Amatic SC','Handlee','Damion', cursive;
@@ -79,10 +82,6 @@ export default {
         color: gray;
     }
     
-    .FooterScript {
-        font-size: 2rem;
-    }
-
     .Black {
         color:black;
     }
