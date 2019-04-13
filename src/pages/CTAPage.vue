@@ -1,7 +1,11 @@
 <template>
     <div id="CTAFormPage container">
             <div class="row align-items-center">
-                <div class="ectLogo col-2 offset-2" to="/"><img alt="ECT logo" src="../img/ect_logo_redblk.gif"></div>
+                <div class="col-2 offset-2">
+                    <router-link :to="{ name: 'Home' }">
+                        <div class="ectLogo" to="/"><img alt="ECT logo" src="../img/ect_logo_redblk.gif"></div>
+                    </router-link>
+                </div>
                 <div class="homeContent col-8">            
                     <div class="Header"><span class="grey"><h1>Rapid Response Insights</h1></span>
                     </div>

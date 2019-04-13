@@ -20,7 +20,7 @@
                             </thead>
                             <tr> <td>Theraputic Areas:</td><td>1</td><td>2</td><td>3 or more</td></tr>
                             <tr> <td>Annual Insights:</td><td> &lt; 10,000</td><td>10,000 - 20,0000</td><td> &gt; 20,000</td></tr>
-                            <tr> <td></td><td colspan="3"><div class="RequestInfo">Request more Info</div></td></tr>
+                            <tr> <td></td><td colspan="3"><router-link to="/ctapage"><div class="RequestInfo">Request more Info</div></router-link></td></tr>
                             <tr> <td>Unlimited Users</td><td class="Red"> &#x2714;</td><td class="Red">&#x2714;</td><td class="Red"> &#x2714;</td></tr>
                             <tr> <td>Hosting and Backup</td><td class="Red"> &#x2714;</td><td class="Red">&#x2714;</td><td class="Red"> &#x2714;</td></tr>
                             <tr> <td>Support and Maintentance</td><td class="Red">&#x2714;</td><td class="Red">&#x2714;</td><td class="Red"> &#x2714;</td></tr>

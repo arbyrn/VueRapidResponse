@@ -12,7 +12,7 @@ var dataStore = {
             border: 'none',
             imgAlign: 'left',
             linkText: "See All Features >",
-            linkAddress: "#",
+            linkAddress: "/features",
             overlayImg: ''
         },
         {
@@ -26,7 +26,7 @@ var dataStore = {
             border: 'none',
             imgAlign: 'right',
             linkText: "See All Features >",
-            linkAddress: "#",
+            linkAddress: "/features",
             overlayImg: 'CycleOverlay.png'
         },
         {
@@ -40,7 +40,7 @@ var dataStore = {
             border: 'none',
             imgAlign: 'right',
             linkText: "See All Features >",
-            linkAddress: "#",
+            linkAddress: "/features",
             overlayImg: ''
         },
         {
@@ -54,7 +54,7 @@ var dataStore = {
             border: 'black',
             imgAlign: 'right',
             linkText: "Schedule a Demo>",
-            linkAddress: "#",
+            linkAddress: "/ctapage",
             overlayImg: ''
         },
         {
@@ -68,13 +68,13 @@ var dataStore = {
             border: 'black',
             imgAlign: 'left',
             linkText: "Schedule a Demo>",
-            linkAddress: "#",
+            linkAddress: "/ctapage",
             overlayImg: ''
         },
         {
             cardId: 'FastMods',
             featureHeader: 'Fast Modifications',
-            featureText: 'Field values can be changed at any time, with 24-hour turnaround or less. </strong>Collection and analysis is more agile</strong> in response to market events. This is a standard feature at no additional cost.',
+            featureText: 'Field values can be changed at any time, <strong>with 24-hour turnaround or less. </strong>Collection and analysis is more agile</strong> in response to market events. This is a standard feature at no additional cost.',
             callout: '24-Hour Modification',
             calloutColor: 'black',
             mainImg: 'clock.jpg',
@@ -82,7 +82,7 @@ var dataStore = {
             border: 'black',
             imgAlign: 'right',
             linkText: "Schedule a Demo>",
-            linkAddress: "#",
+            linkAddress: "/ctapage",
             overlayImg: ''
         },
         {
@@ -96,7 +96,7 @@ var dataStore = {
             border: 'black',
             imgAlign: 'left',
             linkText: "Schedule a Demo>",
-            linkAddress: "#",
+            linkAddress: "/ctapage",
             overlayImg: ''
         },
         {
@@ -110,7 +110,7 @@ var dataStore = {
             border: 'black',
             imgAlign: 'right',
             linkText: "Schedule a Demo>",
-            linkAddress: "#",
+            linkAddress: "/ctapage",
             overlayImg: ''
         },
         {
@@ -124,7 +124,7 @@ var dataStore = {
             border: 'black',
             imgAlign: 'left',
             linkText: "Schedule a Demo>",
-            linkAddress: "#",
+            linkAddress: "/ctapage",
             overlayImg: ''
         },
         {
@@ -138,7 +138,7 @@ var dataStore = {
             border: 'black',
             imgAlign: 'right',
             linkText: "Schedule a Demo>",
-            linkAddress: "#",
+            linkAddress: "/ctapage",
             overlayImg: ''
         },
         {
@@ -152,7 +152,7 @@ var dataStore = {
             border: 'black',
             imgAlign: 'left',
             linkText: "Schedule a Demo>",
-            linkAddress: "#",
+            linkAddress: "/ctapage",
             overlayImg: ''
         },
         {
@@ -166,7 +166,7 @@ var dataStore = {
             border: 'red',
             imgAlign: 'left',
             linkText: "Schedule a Demo>",
-            linkAddress: "#",
+            linkAddress: "/ctapage",
             overlayImg: ''
         },
         {
@@ -180,7 +180,7 @@ var dataStore = {
             border: 'red',
             imgAlign: 'right',
             linkText: "Schedule a Demo>",
-            linkAddress: "#",
+            linkAddress: "/ctapage",
             overlayImg: ''
         },
         {
@@ -194,7 +194,7 @@ var dataStore = {
             border: 'red',
             imgAlign: 'left',
             linkText: "Schedule a Demo>",
-            linkAddress: "#",
+            linkAddress: "/ctapage",
             overlayImg: ''
         },
         {
@@ -208,7 +208,7 @@ var dataStore = {
             border: 'red',
             imgAlign: 'right',
             linkText: "Schedule a Demo>",
-            linkAddress: "#",
+            linkAddress: "/ctapage",
             overlayImg: ''
         },
         {
@@ -222,7 +222,7 @@ var dataStore = {
             border: 'red',
             imgAlign: 'right',
             linkText: "Schedule a Demo>",
-            linkAddress: "#",
+            linkAddress: "/ctapage",
             overlayImg: ''
         },
         {
@@ -236,7 +236,7 @@ var dataStore = {
             border: 'red',
             imgAlign: 'left',
             linkText: "Schedule a Demo>",
-            linkAddress: "#",
+            linkAddress: "/ctapage",
             overlayImg: ''
         },
         {
@@ -250,7 +250,7 @@ var dataStore = {
             border: 'red',
             imgAlign: 'left',
             linkText: "Schedule a Demo>",
-            linkAddress: "#",
+            linkAddress: "/ctapage",
             overlayImg: ''
         },
         {

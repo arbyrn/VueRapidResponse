@@ -8,7 +8,7 @@
             <div class="col-9 offset-3"><h3>Schedule your Free Consult<img id="footerPhone" src="../img/redphone256x256.png"/></h3></div>
         </div>
         <div class="row text-left">
-            <div class="col-9 offset-3 "><span >Contact Us</span> <b class="Black">(888) 843-5691</b> | <a class="ECTEmail" href="mailto:solutions@ecttechnologies.com">solutions@ecttechnologies.com</a></div>
+            <div class="col-9 offset-3 "><span >Contact Us</span> <b class="Black">(888) 843-5691</b> | <a class="ECTEmail" href="mailto:solutions@ecttechnologies.com?subject=Mail us some info on Rapid Response Insights">solutions@ecttechnologies.com</a></div>
         </div>
         <div class="row text-left">
             <div class="col-9 offset-3">
