@@ -17,11 +17,9 @@
                     <b-nav-item-dropdown text="Plans" right>
                         <b-dropdown-item to="/plans">Plans</b-dropdown-item>
                         <b-dropdown-item to="/plans#PilotProgram">Pilot</b-dropdown-item>
-                        <!-- <b-dropdown-item href="#">FAQ</b-dropdown-item> -->
                     </b-nav-item-dropdown>
-                    <b-nav-item to="/ourteam">Our Team</b-nav-item>                        
-                    <b-nav-item href="#">Support</b-nav-item>
-                    <b-nav-item href="#">Login</b-nav-item>
+                    <b-nav-item to="/ourteam">Our Team</b-nav-item> 
+                    <b-nav-item href="https://www.cibica.co">Login</b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>

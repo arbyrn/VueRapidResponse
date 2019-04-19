@@ -2,7 +2,7 @@
     <div class="RnRFooter container">
         <hr>
         <div class="row text-left">
-            <div class="col-9 offset-3"> <h3>For the latest, follow us on LinkedIn <router-link to="https://www.linkedin.com/in/richardwolsson/"><img id="footerLinkedIn" src="../img/redlinkedin612x612.png" /></router-link></h3></div>
+            <div class="col-9 offset-3"> <h3>For the latest, follow us on LinkedIn <a href="https://www.linkedin.com/company/ect-us"><img id="footerLinkedIn" src="../img/redlinkedin612x612.png" /></a></h3></div>
         </div>
         <div class="row text-left">
             <div class="col-9 offset-3"><h3>Schedule your Free Consult<img id="footerPhone" src="../img/redphone256x256.png"/></h3></div>
@@ -21,7 +21,7 @@
                         |                              
                         <router-link to="/ourteam"><span><a href="#">Our Team</a></span></router-link>
                         |                   
-                        <router-link to="/"><span><a href="#">Login</a></span></router-link>           
+                        <span><a href="https://www.cibica.co">Login</a></span>           
                     <!-- <ul>
                         <li><a href="#">Features</a></li>
                         <li>|</li>                   

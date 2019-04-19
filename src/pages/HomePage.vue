@@ -27,11 +27,22 @@
     import EctFeature from '../components/EctFeature.vue'
     import RnRDivider from '../components/RnRDivider.vue'
     import RnRFooter from '../components/RnRFooter.vue'
+   
  
 export default {
       name: 'HomePage',
+      metaInfo: {
+          title:'Rapid Response Medical Insights',
+          titleTemplate: '%s | Rapid Response Medical Insights - Home',
+          meta: [
+              {vmid:"description", name:"description", content:"Collect, analyze and act on Medical Affairs Medical Insights faster and better than your competitors, without breaking your budget."}
+          ]
+      },
       props: {
         msg: String
+      },
+      data(){
+          return { thistest: "this is something to return"};
       },
     components: {
         Header,
@@ -43,6 +54,9 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    /* div {
+        background-color: #FC7F7F;
+    } */
     .Header{
         font: bold 44px tahoma;
         color:black;

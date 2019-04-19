@@ -12,23 +12,28 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <input id="inCompany" v-model="inCompany" name="inCompany" placeholder="Company Name / Organization"/>
+                <input id="inCompany" v-model="inCompany" name="inCompany" placeholder="* Company Name / Organization"/>
             </div>
         </div>
         <div class="row"> 
             <div class="col-sm-12">          
-                <input id="inFirstName" v-model="inFirstName" name="inFirstName" placeholder="First Name"/>            
-                <input id="inLastName" v-model="inLastName" name="inLastName" placeholder="Last Name"/>
+                <input id="inFirstName" v-model="inFirstName" name="inFirstName" placeholder="* First Name"/>            
+                <input id="inLastName" v-model="inLastName" name="inLastName" placeholder="* Last Name"/>
             </div>
         </div>        
         <div class="row">
             <div class="col-sm-12">
-                <input id="inWorkEmail" v-model="inWorkEmail" name="inWorkEmail" placeholder="Work Email"/>
+                <input id="inWorkEmail" v-model="inWorkEmail" name="inWorkEmail" placeholder="* Work Email"/>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12">
                 <input id="inPhoneNumber" v-model="inPhoneNumber" name="inPhoneNumber" placeholder="Best Phone Number"/>
+            </div>
+        </div>
+         <div class="row formLegendRow">
+            <div class="col-12">
+                <span class="formLegend">* required</span>
             </div>
         </div>
         <div class="row">
@@ -45,6 +50,7 @@
                 </b-form-checkbox>
             </div>
         </div>
+       
         <div v-if="sending" class="row">
             <div v-if="contactSent === 2">
                 <h2> Request was received! Someone will contact you shortly.</h2>
@@ -59,6 +65,11 @@
         <div v-else class="row">
             <button id="btnSchedNow" v-on:click="sendContactReq">Schedule Now</button>
         </div>
+        <div v-if="errors.length">
+            <ul class="formErrors">
+                <li v-for="error in errors">{{ error }}</li>
+            </ul>
+        </div>
         <div class="row">
             <div class="col-sm-1">
                 <img id="CTALockImg" class="" src="../img/lockimg.png" alt="Lock pic">
@@ -66,14 +77,7 @@
             <div class="col-sm-11">
                 <span>We hate spam. We will never sell or share your information. See our <a href="#">privacy policy</a>.</span>
             </div>
-        </div>
-        <!-- <div v-for="currency in info"
-                    class="currency">
-                    {{currency.description}}:
-                    <span class="lighten">
-                        <span v-html="currency.symbol"></span>{{currency.rate_float}}
-                    </span>
-                </div> -->
+        </div>       
     </div>
 </template>
 
@@ -91,64 +95,81 @@ export default {
     data () {
         return {
             info: null,
-        inCompany: "",
-        inFirstName: "",
-        inLastName: "",
-        inWorkEmail: "",
-        inPhoneNumber:"",
-        chkPleaseCall: false,
-        chkScheduleDemo: false,        
-        contactSent: 1,
-        sending: false
+            inCompany: null,
+            inFirstName: null,
+            inLastName: null,
+            inWorkEmail: null,
+            inPhoneNumber:null,
+            chkPleaseCall: false,
+            chkScheduleDemo: false,        
+            contactSent: 1,
+            sending: false,
+            errors: []
         }
     },
     mounted(){
-        axios
-            .get('https://api.coindesk.com/v1/bpi/currentprice.json')
-            .then(response => (this.info = response.data.bpi))
-            .catch(error => {
-              console.log(error)
-              this.errored = true
-            })
-            .finally(() => this.loading = false)
+        
+        var a = 1;
+   
     },
     methods: {
         sendContactReq: function(event) {
-            this.sending = true;
-            var config = {
-                headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded'                        
-                    }
-                
-            };
-            axios.post('https://ectwebappfunctions.azurewebsites.net/api/RapidResponseContactTrigger?code=kkmGhTglW3kNwK1ni/TGtdnFOFmXJILdp6gvACYVTaFNyiFznn7HjA==', {
-                'firstname': this.inFirstName,
-                'lastname': this.inLastName,
-                'companyname': this.inCompany,
-                'email': this.inWorkEmail,
-                'phone': this.inPhoneNumber,
-                'chkDemo': this.chkScheduleDemo,
-                'chkPleaseCall': this.chkPleaseCall
-            }, config)
-            // axios.post('https://ectwebappfunctions.azurewebsites.net/api/RapidResponseContactTrigger', {
-            //     firstname: this.inFirstName,
-            //     lastname: this.inLastName,
-            //     companyname: this.inCompany,
-            //     email: this.inWorkEmail,
-            //     phone: this.inPhoneNumber,
-            //     chkDemo: this.chkScheduleDemo,
-            //     chkPleaseCall: this.chkPleaseCall
-            // })
-            .then(function(response){
-                console.log("Response came back!"); 
-                // this.sending = false;             
-               // this.contactSent = 2;
-            })
-            .catch(function (error){
-                // this.sending = false; 
-                console.log("Request Errored: " + error);
-                //this.contactSent = 3;
-            });
+            var vm = this;
+            if (this.checkForm(event)) {
+                this.sending = true;
+                var config = {
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'                        
+                        }                
+                };
+                axios.post('https://ectwebappfunctions.azurewebsites.net/api/RapidResponseContactTrigger?code=kkmGhTglW3kNwK1ni/TGtdnFOFmXJILdp6gvACYVTaFNyiFznn7HjA==', {
+                    'firstname': this.inFirstName,
+                    'lastname': this.inLastName,
+                    'companyname': this.inCompany,
+                    'email': this.inWorkEmail,
+                    'phone': this.inPhoneNumber,
+                    'chkDemo': this.chkScheduleDemo,
+                    'chkPleaseCall': this.chkPleaseCall
+                }, config)
+                .then(function(response){
+                    console.log("Response came back!"); 
+                    //vm.sending = false;             
+                    vm.contactSent = 2;
+                })
+                .catch(function (error){
+                    //vm.sending = false; 
+                    console.log("Request Errored: " + error);
+                    vm.contactSent = 3;
+                });
+            }
+        },
+        checkForm: function(e){
+            this.errors = [];
+
+            if (!this.inFirstName ) {
+                this.errors.push("First name required.");
+            }
+            if (!this.inLastName) {
+                this.errors.push("Last name required.");
+            }
+            if (!this.inCompany) {
+                this.errors.push("Company name required.");
+            }
+            if(!this.inWorkEmail){
+                this.errors.push('Email required');
+            } else if (!this.validEmail(this.inWorkEmail)){
+                this.errors.push("The email doesn't appear to be valid.");
+            }
+
+            if(!this.errors.length){
+                return true;
+            }
+            
+            e.preventDefault();
+        },
+        validEmail: function (email){
+             var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
         }
     }
 }
@@ -164,11 +185,23 @@ div.CTAForm div input{
     margin: 12px;
     text-align: center;
 }
-
+ul.formErrors{
+    color: red;
+    font-size: 1.5em;
+    list-style: none;
+}
 /* div.CTAForm div.row {
     margin: 10px;
 } */
-
+div.formLegendRow{
+    text-align:end;
+    vertical-align: text-top;
+}
+div span.formLegend {
+    vertical-align: text-top; 
+    font-size: 14px;
+   
+}
 .Gray {
     color: gray;
 }

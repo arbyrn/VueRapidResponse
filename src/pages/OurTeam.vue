@@ -9,11 +9,11 @@
                 <div class="Content">
                     You don't have a cookie-cutter business and you don't need a cookie-cutter medical insights solution.
                 </div>            
-                <router-link to="/ctapage"><button class="btnSeeDemo rounded-3">Connect With Us</button></router-link>
+                <button class="btnfollowLinkedIn"><a href="https://www.linkedin.com/company/ect-us">Follow us on LinkedIn</a></button>
                 
             </div>
             <hr>
-            <EctFeature card="Team"></EctFeature> 
+            <EctFeature card="TeamFactory"></EctFeature> 
             <div class="container">
                 <div class="row">
                     <p class="Header">
@@ -61,7 +61,7 @@
                         Want more information about our team and how we can help your Medical Insights process? <a href="https://www.linkedin.com/in/richardwolsson/">Connect with Richard on LinkedIn</a> Today.
                         </p>
                         <div class="col-md-12">
-                            <router-link to="/ctapage"><button class="btnSeeDemo rounded-3">Connect with Us</button></router-link>
+                            <button class="btnfollowLinkedIn" ><a href="https://www.linkedin.com/company/ect-us">Follow us on LinkedIn</a></button>
                         </div>
                     </div>
                 </div>
@@ -77,6 +77,13 @@
  
 export default {
       name: 'OurTeam',
+      metaInfo: {
+          title:'Rapid Response Medical Insights',
+          titleTemplate: '%s - Our Team',
+          meta: [
+              {vmid:"description", name:"description", content:"Rapid Response team. Why do Fortune 500 and Small Businesses choose to partner with ECT Technologies."}
+          ]
+      },
       props: {
         msg: String
       },
@@ -119,7 +126,7 @@ export default {
         color:gray;
     }
 
-    .btnSeeDemo {
+    button.btnSeeDemo {
         margin: 15px;
         background-color: red;
         border-radius: 6px;
@@ -128,6 +135,21 @@ export default {
         font-size: 18px;
         width: 160px;
         height: 45px;
+    }
+
+    button.btnfollowLinkedIn {
+        margin: 15px;
+        background-color: red;
+        border-radius: 6px;
+        color:white; 
+        border-color: red;
+        font-size: 18px;
+        width: 190px;
+        height: 45px;
+    }
+
+    button.btnfollowLinkedIn a {
+        color: white;
     }
 
     .copyText {    

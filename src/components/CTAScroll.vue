@@ -2,13 +2,15 @@
     <div class="CTAScroll">
         <b-carousel
             id="carousel-fade"
-            v-model="slide"
+            v-model="slide" 
+            slide=true
             style="text-shadow: 0px 0px 2px #000"            
             indicators
             img-width="600"
             img-height="800"
         >
             <b-carousel-slide caption="" img-src="../img/FeedRealTime.png"/>
+            <!-- <b-carousel-slide caption="" img-src="../img/4starsTestTrans.png"/> -->
             <b-carousel-slide caption="" img-src="../img/MedicalStrategy.png" />
             <b-carousel-slide caption="" img-src="../img/ShrinkCycleTime.png" />
             <b-carousel-slide caption="" img-src="../img/InsightsSince2004.png" />

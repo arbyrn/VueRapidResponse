@@ -68,7 +68,14 @@
     import RnRFooter from '../components/RnRFooter.vue'
  
 export default {
-      name: 'Features',
+      name: 'Plans',
+      metaInfo: {
+          title:'Rapid Response Medical Insights',
+          titleTemplate: '%s - Pricing and Plans',
+          meta: [
+              {vmid:'description', name:'description', content:'Rapid Response Insights is the most cost-effective platform in the pharmaceutical medical insights market.'}
+          ]
+      },
       props: {
         msg: String
       },

@@ -1,5 +1,5 @@
 <template>
-    <div id="CTAFormPage container">
+    <div id="CTAFormPage" class="container">
             <div class="row align-items-center">
                 <div class="col-2 offset-2">
                     <router-link :to="{ name: 'Home' }">
@@ -11,7 +11,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div >
                 <div class="row">
                     <div id="CTAScrollContainer" class="col-md-5">
                         <div class="row align-items-center"> 
@@ -33,6 +33,13 @@
     import CTAScroll from "../components/CTAScroll.vue"
     export default {
         name: "CTAPage",
+        metaInfo: {
+          title:'Rapid Response Medical Insights',
+          titleTemplate: '%s - Get more information',
+          meta: [
+              {vmid:"description", name:"description", content:"Get more information on Rapid Response Medical Insights which help to Collect, analyze and act on Medical Affairs Medical Insights faster and better than your competitors, without breaking your budget."}
+          ]
+      },
         components: {
             RnRFooter,
             CTAForm,
@@ -100,7 +107,8 @@
     }
     
     #CTAScrollContainer {
-        background:rgba(250, 0, 0, 0.5);
+        background-color:#fc7f7f;
+        /* background:white; */
         border-radius: 50px;
     }
 
@@ -108,7 +116,11 @@
         border: 2px solid lightgray;
         border-radius: 50px;
         height: auto;
+        
     }
+    /* #CTAFormPage{
+        background:#fc7f7f;
+    } */
     .ectLogo img{
         width:100%
     }

@@ -110,6 +110,13 @@
  
 export default {
       name: 'Features',
+      metaInfo: {
+          title:'Rapid Response Medical Insights',
+          titleTemplate: '%s - Features',
+          meta: [
+              {vmid:"description", name:"description", content:"Features of Rapid Response Medical Insights tools, Collect, analyze and act on Medical Affairs Medical Insights faster and better than your competitors, without breaking your budget."}
+          ]
+      },
       props: {
         msg: String
       },
@@ -118,6 +125,9 @@ export default {
         EctFeature,
         RnRDivider,
         RnRFooter
+    },
+    mounted(){
+        var a = 1;
     },
     methods: {
         getImgUrl(pic) {
@@ -154,7 +164,7 @@ export default {
         -webkit-animation-fill-mode: both;
     }
     .howitworkslist.insights {
-        animation-delay: .25s;
+        animation-delay: 1.5s;
     }
     .arrow {
          animation: FadeIn 2s 1;
@@ -163,7 +173,7 @@ export default {
         -webkit-animation-fill-mode: both;
     }
     .arrow1 {          
-        animation-delay: 1s;
+        animation-delay: 3.5s;
     }
     .arrow img {          
         width: 75px;
@@ -182,13 +192,13 @@ export default {
         -webkit-animation: FadeIn 2s 1;
         animation-fill-mode: both;
         -webkit-animation-fill-mode: both;
-        animation-delay: 1.5s;
+        animation-delay: 5.5s;
         padding-top: 15px;
         margin: 8px auto 8px auto;
     }
 
      .arrow2{   
-        animation-delay: 2s;
+        animation-delay: 6s;
     }
     #InsightAnalysisToolDiv{
         color: white;
@@ -203,16 +213,16 @@ export default {
         animation: FadeIn 2s 1;
         animation-fill-mode: both;
         -webkit-animation-fill-mode: both;
-        animation-delay: 2.5s;
+        animation-delay: 8s;
         margin: 8px auto 8px auto;
     }
 
     .arrow3{
-        animation-delay: 3s;
+        animation-delay: 9s;
     }
 
     .howitworkslist.actions {
-        animation-delay: 3.5s;
+        animation-delay: 11s;
     }
     .btnSeeDemo {
         margin: 15px;

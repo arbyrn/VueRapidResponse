@@ -266,6 +266,20 @@ var dataStore = {
             linkText: "",
             linkAddress: "#",
             overlayImg: ''
+        },
+        {
+            cardId: 'TeamFactory',
+            featureHeader: 'We\'re Not a Factory',
+            featureText: 'Our mission at ECT Technologies is to help you improve the efficiency and effectiveness of your medical affairs department through customized web-based applications. If you want an out-of-the-box solution, that\'s great, we can help. However, experience tells us that every business is unique and assembly line solutions often fall short of providing the best results. Hiring a vendor is okay, but a <span class="text-danger">medical insights technology partner that serves as an extension of your team is where you will get the biggest return on your investment</span>',
+            callout: '',
+            calloutColor: '',
+            mainImg: 'nofactory.jpg',
+            mirrorImg: 'nofactory_og.jpg',
+            border: 'black',
+            imgAlign: 'left',
+            linkText: "",
+            linkAddress: "#",
+            overlayImg: ''
         }
     ],
     dividerDetails: [
@@ -294,7 +308,7 @@ var dataStore = {
                 {
                     btnText: 'Follow us on LinkedIn!',
                     btnColor: 'btnWhite',
-                    btnLink: 'https://www.linkedin.com/in/richardwolsson/',
+                    btnLink: 'https://www.linkedin.com/company/ect-us',
                 }
             ]
         },
