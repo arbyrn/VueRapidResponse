@@ -7,29 +7,39 @@
                     <span class="grey">Your Technology</span> Partner.
                 </div>
                 <div class="Content">
-                    You don't have a cookie-cutter business and you don't need a cookie-cutter medical insights solution.
+                    Your business is unique, we recognize that and can craft a Medical Insights solution that works for your team.
                 </div>            
                 <button class="btnfollowLinkedIn"><a href="https://www.linkedin.com/company/ect-us">Follow us on LinkedIn</a></button>
                 
             </div>
             <hr>
-            <EctFeature card="TeamFactory"></EctFeature> 
+            <EctFeature card="TeamSnow"></EctFeature> 
             <div class="container">
                 <div class="row">
-                    <p class="Header">
+                    <p class="Header FullLength">
                         Why do <span class="Red">Fortune 500</span> and <span class="Red">Small Businesses</span> choose to partner with ECT Technologies?
                     </p>
                     <p class="copyText">
-                        There's no better teacher than experience, and experience is what the ECT Technologies team brings 
-                        when designing a custom medical insights tool for your business.
+                        Because of our Core Values:
                     </p>
+                </div>
+                
+                <p class="text-left">
                     <ul class="copyText">
-                        <li>Over 30 years of <b>pharmaceutical industry</b> experience</li>
-                        <li>Over 25 years in <b>enterprise software development</b> experience</li>
-                        <li>Servicing <b>Fortune 500</b> and <b>Small Businesses</b> in the Pharmaceutical and Biotechnical industries.</li>
-                        <li>Over 30 years of pharmaceutical industry experience</li>           
+                        <li><strong class="CoreValue">Responsive</strong><span class="CVexplanation"> to our Clients</span></li>
+                        <li><strong class="CoreValue">Innovative</strong><span class="CVexplanation"> in the Solutions we provide</span></li>
+                        <li><strong class="CoreValue">Reliable</strong><span class="CVexplanation"> with our applications, our support, our commitment</span></li>
                     </ul>
-                    <img id="ourcustomersimg" src="../img/Picture1.png" />
+                </p>
+                <div class="row">
+                    <section class="copyText">
+                        <p>Over 30 years of <b>pharmaceutical industry</b> experience</p>
+                        <p>Over 25 years in <b>enterprise software development</b> experience</p>
+                        <p>Over 15 years of <b>helping Medical Affairs departments</b> improve thier Medical Insights</p>
+                        <p>Servicing <b>Fortune 500</b> and <b>Small Businesses</b> in the Pharmaceutical and Biotechnical industries.</p>
+                                   
+                    </section>
+                    <img id="ourcustomersimg" src="../img/Clients.jpg" />
                 </div>
                 
                 <div class="row">
@@ -107,6 +117,9 @@ export default {
         text-align:left;
         max-width:780px;
     }
+    p.Header.FullLength{        
+        max-width: 1200px;
+    }
     .Header .grey{
         color:gray;
     }
@@ -115,17 +128,13 @@ export default {
         color:gray;
         text-align: justify;
     }
-    .Header{
-        font: bold 44px tahoma;
-        color:black;
-        text-align:left;
-        max-width:780px;
+    .CoreValue{
+        font: bold 40px tahoma;
     }
-
-    .Header .grey{
-        color:gray;
+    .CVexplanation{
+        vertical-align:.35rem;
+        margin-left:.5rem; 
     }
-
     button.btnSeeDemo {
         margin: 15px;
         background-color: red;
@@ -150,6 +159,7 @@ export default {
 
     button.btnfollowLinkedIn a {
         color: white;
+        font: 18px Tahoma;
     }
 
     .copyText {    

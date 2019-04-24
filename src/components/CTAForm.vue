@@ -134,12 +134,12 @@ export default {
                 .then(function(response){
                     console.log("Response came back!"); 
                     //vm.sending = false;             
-                    vm.contactSent = 2;
+                    //vm.contactSent = 2;
                 })
                 .catch(function (error){
                     //vm.sending = false; 
                     console.log("Request Errored: " + error);
-                    vm.contactSent = 3;
+                    //vm.contactSent = 3;
                 });
             }
         },
