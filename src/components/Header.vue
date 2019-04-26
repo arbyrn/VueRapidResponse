@@ -11,17 +11,18 @@
                 <b-navbar-nav>
                     <b-nav-item-dropdown text="Features" right>
                         <b-dropdown-item to="/features">How it Works</b-dropdown-item>                        
-                        <b-dropdown-item to="/features#collection">Collection</b-dropdown-item>
-                        <b-dropdown-item to="/features#analysis">Analysis</b-dropdown-item>
+                        <b-dropdown-item href="/features#collection">Collection</b-dropdown-item>
+                        <b-dropdown-item href="/features#analysis">Analysis</b-dropdown-item>
                     </b-nav-item-dropdown>
                     <b-nav-item-dropdown text="Plans" right>
-                        <b-dropdown-item to="/plans">Plans</b-dropdown-item>
-                        <b-dropdown-item to="/plans#PilotProgram">Pilot</b-dropdown-item>
+                        <b-dropdown-item href="/plans">Plans</b-dropdown-item>
+                        <!-- <b-dropdown-item to="/plans#PilotProgram">Pilot</b-dropdown-item> -->
+                        <b-dropdown-item href="/plans#PilotProgram">Pilot</b-dropdown-item>
                     </b-nav-item-dropdown>
                     <b-nav-item to="/ourteam">Our Team</b-nav-item> 
                     <b-nav-item-dropdown text="Login" right> 
-                        <b-dropdown-item href="https://www.cibica.co">Collection Tool</b-dropdown-item>                        
-                        <b-dropdown-item href="https://analysis.cibica.co">Analysis Tool</b-dropdown-item>
+                        <b-dropdown-item href="https://www.cibica.co" target="_blank">Collection Tool</b-dropdown-item>                        
+                        <b-dropdown-item href="https://analysis.cibica.co" target="_blank">Analysis Tool</b-dropdown-item>
                     </b-nav-item-dropdown>
                 </b-navbar-nav>
             </b-collapse>

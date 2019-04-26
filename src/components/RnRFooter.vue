@@ -21,18 +21,8 @@
                         |                              
                         <router-link to="/ourteam"><span><a href="#">Our Team</a></span></router-link>
                         |                   
-                        <span><a href="https://www.cibica.co">Login</a></span>           
-                    <!-- <ul>
-                        <li><a href="#">Features</a></li>
-                        <li>|</li>                   
-                        <li><a href="#">Plans</a></li>
-                        <li>|</li>                              
-                        <li><a href="#">Our Team</a></li>
-                        <li>|</li>                   
-                        <li><a href="#">Support</a></li>
-                        <li>|</li>                   
-                        <li><a href="#">Login</a></li>
-                    </ul>     -->
+                        <span><a href="https://analysis.cibica.co" target="_blank">Login</a></span>       
+                   
                 </nav>
             </div>
         </div>        
@@ -113,8 +103,7 @@ export default {
         height: 30px;
         margin-left: .4rem;
     }
-   #footerPhone{
-      
+   #footerPhone{      
         width: 30px;
         height: 30px;
         margin-left: .4rem;
