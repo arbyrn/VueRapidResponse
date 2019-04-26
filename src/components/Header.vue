@@ -19,7 +19,10 @@
                         <b-dropdown-item to="/plans#PilotProgram">Pilot</b-dropdown-item>
                     </b-nav-item-dropdown>
                     <b-nav-item to="/ourteam">Our Team</b-nav-item> 
-                    <b-nav-item href="https://www.cibica.co">Login</b-nav-item>
+                    <b-nav-item-dropdown text="Login" right> 
+                        <b-dropdown-item href="https://www.cibica.co">Collection Tool</b-dropdown-item>                        
+                        <b-dropdown-item href="https://analysis.cibica.co">Analysis Tool</b-dropdown-item>
+                    </b-nav-item-dropdown>
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
