@@ -5,6 +5,7 @@ import Features from '../pages/Features.vue'
 import Plans from '../pages/Plans.vue'
 import OurTeam from '../pages/OurTeam.vue'
 import CTAPage from '../pages/CTAPage.vue'
+import PrivacyPolicy from '../pages/PrivacyPolicy.vue'
 
 Vue.use(Router)
 
@@ -29,6 +30,11 @@ export default new Router({
       path: '/ourteam',
       name: 'OurTeam',
       component: OurTeam
+    },
+    {
+      path: '/privacy',
+      name: 'privacy',
+      component: PrivacyPolicy
     },
     {
       path: '/ctapage',

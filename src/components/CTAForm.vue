@@ -75,7 +75,7 @@
                 <img id="CTALockImg" class="" src="../img/lockimg.png" alt="Lock pic">
             </div>
             <div class="col-sm-11">
-                <span>We hate spam. We will never sell or share your information. See our <a href="#">privacy policy</a>.</span>
+                <span>We hate spam. We will never sell or share your information. See our <a href="/privacy">privacy policy</a>.</span>
             </div>
         </div>       
     </div>

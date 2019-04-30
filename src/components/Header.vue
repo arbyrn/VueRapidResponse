@@ -15,8 +15,7 @@
                         <b-dropdown-item href="/features#analysis">Analysis</b-dropdown-item>
                     </b-nav-item-dropdown>
                     <b-nav-item-dropdown text="Plans" right>
-                        <b-dropdown-item href="/plans">Plans</b-dropdown-item>
-                        <!-- <b-dropdown-item to="/plans#PilotProgram">Pilot</b-dropdown-item> -->
+                        <b-dropdown-item to="/plans">Plans</b-dropdown-item>                        
                         <b-dropdown-item href="/plans#PilotProgram">Pilot</b-dropdown-item>
                     </b-nav-item-dropdown>
                     <b-nav-item to="/ourteam">Our Team</b-nav-item> 
