@@ -13,9 +13,6 @@
     metaInfo: {
           title:'Rapid Response Medical Insights',
           titleTemplate: '%s | Rapid Response Medical Insights'
-      },
-      data() {
-        return {anotther:"can this work"};
       }
   }
 </script>
