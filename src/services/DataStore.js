@@ -215,7 +215,7 @@ var dataStore = {
       cardId: "AI",
       featureHeader: "Artificial Intelligence",
       featureText:
-        "Rapid Response Insights uses the pre-cursors to artificial intelligence to <strong>identify important trends and evolving medical information.</strong> ECT is dedicated to bringing the full power of machine learning to derive more meaning from collected insights.",
+        "Rapid Response Insights uses machine learning to identify important trends and evolving medical information. ECT is dedicated to bringing the full power of artificial intelligence to derive more meaning from collected insights.",
       callout: "Artificial Intelligence",
       calloutColor: "red",
       mainImg: "cranium.jpg",
